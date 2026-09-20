@@ -1,64 +1,63 @@
 # Verification and reproduction
 
-## Delivered result
+## Executed GitHub validation
 
-`artifacts/node-tests.txt` records **32 passing Node tests**. They exercise storage validation/identity, pairwise force symmetry, a fixed-step orbital energy test, reversibility, Barnes–Hut agreement, coincident-point termination, merger/fragmentation invariants, swept elastic crossings, thermal response, scenario validity, atomic invalid operations, timestep limits, project validation, history and the actual integrated impact scenario.
+The September 20, 2026 import ran remotely and passed **32 numerical tests and 38 real-origin Chromium interaction checks**. Evidence:
 
-`artifacts/browser-tests.json` records **37 passing browser checks** against the generated standalone HTML. Tested controls include pause/play/step, search/selection, mass and velocity editing, keyboard undo/redo, orbit circularization, material editing, radius derivation, object creation/duplication/deletion/fragmentation, solver settings, overlays, camera navigation, measurement, following, command execution, workspace focus, scenario loading, JSON restore, timeline scrubbing, drag-launch, PNG generation, label layout, and mobile drawers/dialog bounds. The run requires zero uncaught browser or console errors.
+- `artifacts/github-import-numerical.tap`
+- `artifacts/github-validation/browser-tests.json`
+- `release/import-verification.json`
+- https://github.com/wieslawsoltes/Orbitarium/actions/runs/35509271186
 
-The delivered browser evidence used Chromium in a restricted environment with offline `page.set_content`, the CPU/Canvas path and no eligible origin-based storage. **Two checks are explicitly `not-run`: WebGPU execution and IndexedDB round-trip on an eligible origin.** No shader-compilation, real-GPU throughput, physical touch device, Safari/Firefox, or full screen-reader validation is asserted. The supplied GitHub workflows have not been executed remotely as part of this delivery.
+Browser checks cover pause/play/step, selection, mass and velocity editing, undo/redo, circularization, material editing, radius calculation, creation/duplication/deletion/fragmentation, solver settings, overlays, camera navigation, measurement, following, command execution, workspace focus, scenarios, JSON restore, timeline scrubbing, launch gestures, PNG generation, label layout, mobile UI and IndexedDB save/read/list/delete. They require zero uncaught browser or console errors.
 
-Screenshots in `artifacts/` are captured from the running app, not generated concept illustrations. Device FPS counters in screenshots are observations of that environment, not published benchmarks.
+**WebGPU execution was not run in the default headless browser**, which exposed no eligible adapter. No real-GPU throughput, physical touch-device, Safari/Firefox or full screen-reader validation is asserted. The GPU runner below explicitly fails rather than silently passing when an adapter is unavailable.
+
+Original local logs under `artifacts/` record an earlier 37-check offline run and blocked normal-origin attempts. They are retained as historical evidence. Current captures under `artifacts/github-validation/` were produced by the real running application. Legacy PNG aliases were refreshed; see `artifacts/SCREENSHOT-PROVENANCE.md`. Screenshot FPS counters are observations, not benchmarks.
 
 ## Numerical tests
 
 ```sh
-npm install --ignore-scripts --no-audit --no-fund
+npm ci --ignore-scripts --no-audit --no-fund
 npm run check
 npm test
 ```
 
-No third-party numerical test framework or reference solver is required. The direct Float64 implementation is the explicit approximation reference for Barnes–Hut tests. Assertions and tolerances are visible in `tests/physics.test.mjs`.
+Tests cover storage validation/identity, force symmetry, orbital energy, reversibility, Barnes–Hut agreement, coincident-point termination, merger/fragmentation invariants, swept elastic crossings, thermal response, scenarios, atomic invalid operations, timestep limits, project validation, history and an integrated impact. The direct Float64 solver is the explicit approximation reference; tolerances are visible in `tests/physics.test.mjs`.
 
 ## Real-origin browser tests
 
-In one terminal:
-
-```sh
-npm start
-```
-
-In another:
+Start the application with `npm start`. In another terminal:
 
 ```sh
 python -m pip install -r tests/requirements.txt
 python -m playwright install chromium
-python tests/browser_smoke.py
+python tests/browser_smoke.py --artifacts artifacts/local-validation
 ```
 
-The default URL is `http://127.0.0.1:4173`. `--url` selects another deployment. `--chromium /path/to/chromium` selects an existing browser executable. The script tests GPU paths whenever an initialized GPU solver is available, then performs IndexedDB CRUD on the real origin.
+The default URL is `http://127.0.0.1:4173`. Use `--url` for another deployment and `--chromium /path/to/chromium` for an existing executable. A distinct artifacts directory preserves previous evidence. The script exercises GPU paths whenever the initialized solver is available and tests IndexedDB on the real origin.
 
-To make WebGPU availability mandatory:
+## Required WebGPU validation
 
 ```sh
-python tests/browser_smoke.py --require-gpu
+python tests/browser_smoke.py --require-gpu --artifacts artifacts/gpu-validation
 ```
 
-That mode requests unsafe WebGPU/software ANGLE flags for an automated headless environment. It is a test configuration, not a requirement or recommendation for end users. A driver/browser configuration that cannot supply an adapter will fail the test rather than report a GPU pass. GPU checks include shader/pipeline initialization and comparison of three integrated substeps at counts 1, 2, 65 and 190, including non-multiple-of-64 workgroups. These compare Float32 output with direct Float64 results using explicit finite-error tolerances, not bitwise equality.
+This mode requests unsafe WebGPU/software ANGLE flags for a headless test environment; those flags are not a recommendation for end users. It fails without a usable adapter. GPU checks include shader/pipeline initialization and three-substep comparisons at body counts 1, 2, 65 and 190, including padded workgroups. Float32 results are compared with the direct Float64 solver using explicit finite-error tolerances, not bitwise equality.
 
 ## Restricted offline reproduction
 
 ```sh
 npm run build
-python tests/browser_smoke.py --offline --chromium /usr/bin/chromium
+python tests/browser_smoke.py --offline --artifacts artifacts/offline-validation
 ```
 
-This loads the standalone file contents into an offline browser document and deliberately disables the GPU process. It is the mode used for the delivered evidence. It cannot validate origin-dependent capabilities; the report makes that distinction machine-readable.
+Offline mode uses the generated standalone HTML with the GPU process disabled. It cannot validate HTTP paths, IndexedDB on a normal origin or WebGPU; reports mark unavailable checks as not-run.
 
-## CI and deployment
+## CI and Pages
 
-`.github/workflows/ci.yml` installs local workspace dependencies, syntax-checks, runs numerical tests, builds the application, starts a static test origin, and runs the browser checks. Test screenshots and reports upload even on failure. `.github/workflows/pages.yml` validates, builds, and deploys on pushes to `main` or manual dispatch. It requires Pages configured to use GitHub Actions. `scripts/publish-github.mjs` performs that setup using the operator's local GitHub CLI login and verifies the published commit marker. The source package alone does not enable Pages or establish a live deployment; see `docs/PUBLISHING.md`.
+`.github/workflows/ci.yml` runs numerical, syntax, build, Pages-path and real-origin browser checks on pushes, pull requests and manual dispatch. It uploads fresh evidence even after failure. `.github/workflows/pages.yml` deploys only `main`, checks its live revision marker and fetches essential modules and shaders. See [PUBLISHING](PUBLISHING.md).
 
-## Performance work still worth measuring
+## Performance boundaries
 
-Measure CPU direct/tree crossover, octree allocation cost, full snapshot memory, exact invariant sampling cost, GPU readback latency and Canvas fallbacks separately. The current frame budget is checked between CPU substeps, not enforced through preemption. Avoid extrapolating the 900-particle demo to millions of bodies. The Float32 GPU solver is batched but not GPU-resident end-to-end. High dynamic-range encounters require Float64 reference runs and explicit timestep convergence studies.
+Measure direct/tree crossover, octree allocation, snapshot memory, invariant sampling, GPU readback and Canvas rendering independently. The frame budget is checked between CPU substeps, not enforced through preemption. Do not extrapolate the 900-particle scenario to millions of bodies. High-dynamic-range Float32 encounters require Float64 reference runs and timestep-convergence studies.

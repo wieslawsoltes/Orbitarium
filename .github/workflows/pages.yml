@@ -1,0 +1,86 @@
+name: Publish Orbitarium to GitHub Pages
+run-name: Orbitarium Pages · ${{ github.event.inputs.request_id || github.sha }}
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Optional correlation ID for a manual deployment
+        type: string
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - run: node scripts/verify-pages.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify live HTML, modules, shaders, and exact deployed revision
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_REVISION: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os, time, urllib.request
+          base=os.environ['PAGE_URL'].rstrip('/')+'/'
+          expected=os.environ['EXPECTED_REVISION']
+          assert base.startswith('https://'), 'Expected an HTTPS Pages origin'
+          last='No response'
+          for attempt in range(30):
+              try:
+                  with urllib.request.urlopen(base+'revision.txt?verify='+expected,timeout=15) as r:
+                      actual=r.read().decode().strip()
+                  assert actual==expected, 'Published revision is '+actual
+                  break
+              except Exception as error:
+                  last=str(error)
+                  time.sleep(5)
+          else:
+              raise RuntimeError('Live revision verification failed: '+last)
+          for path in ['', 'app/main.js', 'app/styles.css', 'packages/gpu/src/index.js', 'packages/kernels/src/gravity.wgsl', 'packages/kernels/src/bodies.wgsl', 'packages/kernels/src/background.wgsl']:
+              with urllib.request.urlopen(base+path,timeout=20) as response:
+                  data=response.read()
+                  assert response.status==200 and len(data)>0, path+' was not served'
+                  if not path:
+                      assert b'<title>Orbitarium' in data, 'Unexpected HTML document'
+              print('Verified:',base+path)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+              summary.write('## Orbitarium publication verified\n\nApplication: '+base+'\n\nExact deployed commit: `'+expected+'`\n\nHTML, JavaScript, stylesheet, GPU module, and all three WGSL shaders returned HTTP 200.\n')
+          PY

@@ -1,0 +1,31 @@
+name: Validate Orbitarium
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  numerical-and-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check && npm test && npm run build && node scripts/verify-pages.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r tests/requirements.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Start static origin and run interaction tests
+        run: |
+          node scripts/serve.mjs > /tmp/orbitarium-server.log 2>&1 &
+          for n in $(seq 1 30); do curl --fail --silent http://127.0.0.1:4173/ >/dev/null && break; sleep 1; done
+          python tests/browser_smoke.py --artifacts artifacts/ci-validation
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: orbitarium-browser-evidence
+          path: artifacts/ci-validation/
