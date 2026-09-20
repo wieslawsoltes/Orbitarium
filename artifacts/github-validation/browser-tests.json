@@ -1,0 +1,168 @@
+{
+  "mode": "http://127.0.0.1:4173",
+  "browser": "143.0.7499.4",
+  "duration_seconds": 10.07,
+  "results": [
+    {
+      "test": "boot: 190 physically simulated solar-system bodies",
+      "status": "passed"
+    },
+    {
+      "test": "two live canvas layers have physical backing sizes",
+      "status": "passed"
+    },
+    {
+      "test": "pause freezes simulation time",
+      "status": "passed"
+    },
+    {
+      "test": "play button advances gravity integration",
+      "status": "passed"
+    },
+    {
+      "test": "step advances physics while remaining paused",
+      "status": "passed"
+    },
+    {
+      "test": "explorer search and selection inspect the real Earth body",
+      "status": "passed"
+    },
+    {
+      "test": "mass editor writes physical solar-mass state",
+      "status": "passed"
+    },
+    {
+      "test": "keyboard undo restores physical state",
+      "status": "passed"
+    },
+    {
+      "test": "keyboard redo reapplies the edit",
+      "status": "passed"
+    },
+    {
+      "test": "velocity editor converts km/s into AU/day",
+      "status": "passed"
+    },
+    {
+      "test": "circularize command changes the real velocity",
+      "status": "passed"
+    },
+    {
+      "test": "material editing renormalizes the remaining mass fractions",
+      "status": "passed"
+    },
+    {
+      "test": "material density changes actual collision radius on request",
+      "status": "passed"
+    },
+    {
+      "test": "catalog + add orbit generates a new moving moon",
+      "status": "passed"
+    },
+    {
+      "test": "duplicate creates a distinct persistent identity",
+      "status": "passed"
+    },
+    {
+      "test": "delete removes the selected body",
+      "status": "passed"
+    },
+    {
+      "test": "explode creates 40 integrated fragments and preserves mass",
+      "status": "passed"
+    },
+    {
+      "test": "simulation settings alter physics and visualization",
+      "status": "passed"
+    },
+    {
+      "test": "orbit visibility toggle affects the renderer",
+      "status": "passed"
+    },
+    {
+      "test": "wheel zoom changes the 3D camera",
+      "status": "passed"
+    },
+    {
+      "test": "pointer drag orbits the 3D camera",
+      "status": "passed"
+    },
+    {
+      "test": "measure tool stores two world-space points",
+      "status": "passed"
+    },
+    {
+      "test": "focus locks the camera onto the selected identity",
+      "status": "passed"
+    },
+    {
+      "test": "command palette executes renderer commands",
+      "status": "passed"
+    },
+    {
+      "test": "focus mode expands the live viewport",
+      "status": "passed"
+    },
+    {
+      "test": "scenario library loads a different physical system",
+      "status": "passed"
+    },
+    {
+      "test": "validated JSON import round-trips project, body, and camera state",
+      "status": "passed"
+    },
+    {
+      "test": "timeline restores recorded physics, not only the display",
+      "status": "passed"
+    },
+    {
+      "test": "place-and-launch gesture creates a body with initial velocity",
+      "status": "passed"
+    },
+    {
+      "test": "scene screenshot returns a nonempty PNG",
+      "status": "passed"
+    },
+    {
+      "test": "decluttered label rectangles do not overlap",
+      "status": "passed"
+    },
+    {
+      "test": "WebGPU shader compilation, rendering, and compute parity",
+      "status": "not-run",
+      "reason": "No eligible WebGPU device/context in this browser run"
+    },
+    {
+      "test": "IndexedDB save, read, list, and delete round-trip",
+      "status": "passed"
+    },
+    {
+      "test": "mobile shell fits viewport without horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "test": "mobile explorer drawer opens",
+      "status": "passed"
+    },
+    {
+      "test": "mobile selection opens the object inspector",
+      "status": "passed"
+    },
+    {
+      "test": "mobile inspector close restores navigation",
+      "status": "passed"
+    },
+    {
+      "test": "mobile scenario dialog remains within viewport",
+      "status": "passed"
+    },
+    {
+      "test": "no uncaught errors during browser interaction tests",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "warnings": [
+    "Failed to create WebGPU Context Provider"
+  ]
+}
