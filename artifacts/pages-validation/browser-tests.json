@@ -1,0 +1,14 @@
+{
+  "mode": "http://127.0.0.1:4173/Orbitarium/",
+  "browser": "144.0.7559.96",
+  "duration_seconds": 1.74,
+  "results": [
+    {
+      "test": "browser integration run",
+      "status": "failed",
+      "message": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:4173/Orbitarium/\nCall log:\n  - navigating to \"http://127.0.0.1:4173/Orbitarium/\", waiting until \"networkidle\"\n"
+    }
+  ],
+  "errors": [],
+  "warnings": []
+}

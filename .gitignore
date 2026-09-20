@@ -1,4 +1,7 @@
 node_modules/
+artifacts/failure.png
 .DS_Store
+# dist/ and release/packages/ are intentionally committed with this full delivery.
+# They contain the complete static app and all twelve independently usable packages.
 __pycache__/
-*.pyc
+*.py[cod]

@@ -1,0 +1,34 @@
+{
+  "validated_at": "2026-09-20T11:12:14.643247+00:00",
+  "target_repository": "wieslawsoltes/Orbitarium",
+  "original_archive_sha256": "e51335fa4ece0293669554b9e063d5fc8a7b569687c674912f8ef8cc68d02847",
+  "original_archive_files_preserved_in_initial_commit": 178,
+  "original_import_commit": "cc43b2ff9a030563d35a6eb3d352df874a8eb4dd",
+  "numerical_tests": {
+    "passed": 32,
+    "failed": 0
+  },
+  "offline_browser_checks": {
+    "passed": 37,
+    "failed": 0,
+    "not_run": 2
+  },
+  "pages_asset_validation": {
+    "status": "passed",
+    "local_references": 15,
+    "standalone_packages": 12,
+    "wgsl_resources": 3,
+    "base_path": "/Orbitarium/"
+  },
+  "ci_revision_marker": "validated locally with a supplied GITHUB_SHA",
+  "real_origin_browser_check": {
+    "status": "blocked before application load",
+    "error": "ERR_BLOCKED_BY_ADMINISTRATOR"
+  },
+  "webgpu_execution": "not validated",
+  "indexeddb_real_origin": "not validated",
+  "remote_push": "not completed",
+  "pages_configuration": "not changed remotely",
+  "pages_deployment": "not performed",
+  "publisher_validation": "syntax checked; dry-run verified separately; authenticated remote path not executed"
+}

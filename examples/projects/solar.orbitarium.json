@@ -1,0 +1,6688 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-7,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Sun",
+      "kind": "star",
+      "color": "#ffd38b",
+      "mass": 1,
+      "radius": 0.004650467260962158,
+      "position": [
+        0.0007539826481162408,
+        0.0017527620850764844,
+        0.00005062935200250823
+      ],
+      "velocity": [
+        -0.000005261079635729768,
+        0.0000011889598542184663,
+        7.895224556993024e-8
+      ],
+      "temperature": 5772,
+      "luminosity": 1,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    },
+    {
+      "id": 2,
+      "name": "Mercury",
+      "kind": "rocky",
+      "color": "#b1aaa1",
+      "mass": 1.6608883211715543e-7,
+      "radius": 0.000016308387202198327,
+      "position": [
+        -0.1596617183014112,
+        0.3352833964538181,
+        0.045473837093066356
+      ],
+      "velocity": [
+        -0.02781923077859444,
+        -0.006967056519498094,
+        0.000607512796608192
+      ],
+      "temperature": 440,
+      "luminosity": 0,
+      "albedo": 0.088,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 19751
+    },
+    {
+      "id": 3,
+      "name": "Venus",
+      "kind": "rocky",
+      "color": "#dcb884",
+      "mass": 0.00000244778296881522,
+      "radius": 0.00004045378434654418,
+      "position": [
+        -0.05402146030641694,
+        -0.7225793004566154,
+        -0.026248091197013827
+      ],
+      "velocity": [
+        0.020046813707274968,
+        -0.0013966580405528298,
+        -0.0009380347282278337
+      ],
+      "temperature": 737,
+      "luminosity": 0,
+      "albedo": 0.76,
+      "greenhouse": 500,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 46911
+    },
+    {
+      "id": 4,
+      "name": "Earth",
+      "kind": "earth",
+      "color": "#65a9f5",
+      "mass": 0.0000030034146856628466,
+      "radius": 0.00004258750455597227,
+      "position": [
+        0.9314030694753296,
+        -0.3662405926060391,
+        0.00005062935200250823
+      ],
+      "velocity": [
+        0.006047808334748181,
+        0.016089139570760344,
+        7.895224556993024e-8
+      ],
+      "temperature": 288,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 33,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.6798,
+        "water": 0.0002,
+        "hydrogen": 0
+      },
+      "seed": 57404
+    },
+    {
+      "id": 5,
+      "name": "Moon",
+      "kind": "moon",
+      "color": "#bfc5d0",
+      "mass": 3.6942000633653014e-8,
+      "radius": 0.000011613801666229199,
+      "position": [
+        0.9337697866246981,
+        -0.36524399225002835,
+        0.0001403625823201764
+      ],
+      "velocity": [
+        0.005817382520853096,
+        0.01663195200122883,
+        0.00004895342088162015
+      ],
+      "temperature": 220,
+      "luminosity": 0,
+      "albedo": 0.12,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 4938
+    },
+    {
+      "id": 6,
+      "name": "Mars",
+      "kind": "rocky",
+      "color": "#d28262",
+      "mass": 3.225667372401897e-7,
+      "radius": 0.0000226574080509289,
+      "position": [
+        -0.6716187012855049,
+        1.219372050648811,
+        0.017538185610091607
+      ],
+      "velocity": [
+        -0.013548421847443948,
+        -0.006902420301852494,
+        0.0004584325238522363
+      ],
+      "temperature": 210,
+      "luminosity": 0,
+      "albedo": 0.25,
+      "greenhouse": 5,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 4938
+    },
+    {
+      "id": 7,
+      "name": "Jupiter",
+      "kind": "gas",
+      "color": "#d7b79a",
+      "mass": 0.0009545752895442225,
+      "radius": 0.00046732617030490934,
+      "position": [
+        -0.6344698227366341,
+        -5.362461159218673,
+        0.07356944535109708
+      ],
+      "velocity": [
+        0.007175116295676214,
+        -0.0010735113426858644,
+        -0.00012913947111485547
+      ],
+      "temperature": 165,
+      "luminosity": 0,
+      "albedo": 0.503,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.02,
+        "rock": 0.03,
+        "water": 0,
+        "hydrogen": 0.95
+      },
+      "seed": 30862
+    },
+    {
+      "id": 8,
+      "name": "Saturn",
+      "kind": "gas",
+      "color": "#d9c39b",
+      "mass": 0.00028580494148767647,
+      "radius": 0.00038925687730393614,
+      "position": [
+        -0.5470012354937515,
+        9.157680584335658,
+        -0.30744348992410164
+      ],
+      "velocity": [
+        -0.005758604159340646,
+        -0.0005815907348874188,
+        0.00016730300644399106
+      ],
+      "temperature": 134,
+      "luminosity": 0,
+      "albedo": 0.342,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": true,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.02,
+        "rock": 0.03,
+        "water": 0,
+        "hydrogen": 0.95
+      },
+      "seed": 66663
+    },
+    {
+      "id": 9,
+      "name": "Uranus",
+      "kind": "ice",
+      "color": "#96dadd",
+      "mass": 0.00004365763587079514,
+      "radius": 0.00016953449859497232,
+      "position": [
+        -7.050852027852577,
+        -17.640322364495745,
+        0.2526608243339964
+      ],
+      "velocity": [
+        0.0036074820396545413,
+        -0.001634598274231792,
+        0.000011532625085713622
+      ],
+      "temperature": 76,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 17283
+    },
+    {
+      "id": 10,
+      "name": "Neptune",
+      "kind": "ice",
+      "color": "#648bde",
+      "mass": 0.00005149955161506083,
+      "radius": 0.00016458790412449367,
+      "position": [
+        6.084892994803255,
+        29.54139122845366,
+        -0.8537501470916834
+      ],
+      "velocity": [
+        -0.0030723411129862602,
+        0.0006065553849049572,
+        -0.0000379251255214024
+      ],
+      "temperature": 72,
+      "luminosity": 0,
+      "albedo": 0.29,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 53083
+    },
+    {
+      "id": 11,
+      "name": "Belt 1",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.4542795877477632e-8,
+      "position": [
+        -2.2996982638336836,
+        -0.3099900297597282,
+        -0.00861482443957976
+      ],
+      "velocity": [
+        0.001565575229646671,
+        -0.010782261732791272,
+        -0.00029966653068269096
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40446
+    },
+    {
+      "id": 12,
+      "name": "Belt 2",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.403035005078336e-8,
+      "position": [
+        -0.336136927428616,
+        -2.6411765686714004,
+        -0.01962808463417469
+      ],
+      "velocity": [
+        0.01045987027609131,
+        -0.0011555377965334203,
+        -0.000008533799799750728
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 56609
+    },
+    {
+      "id": 13,
+      "name": "Belt 3",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.922003293170591e-8,
+      "position": [
+        0.7316470316132554,
+        2.120737928914277,
+        0.005495331568671279
+      ],
+      "velocity": [
+        -0.010773570388840836,
+        0.004324688181145337,
+        0.00001118812193794414
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 15291
+    },
+    {
+      "id": 14,
+      "name": "Belt 4",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.026394337059536e-8,
+      "position": [
+        2.3390582387441716,
+        -0.32422108877961614,
+        0.009323063232444286
+      ],
+      "velocity": [
+        0.0015132195941969693,
+        0.011296220137218897,
+        -0.00032121194115531044
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 75855
+    },
+    {
+      "id": 15,
+      "name": "Belt 5",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 3.8189072392137624e-8,
+      "position": [
+        1.7654124870158205,
+        2.5827193300746663,
+        -0.12847095584417767
+      ],
+      "velocity": [
+        -0.008005835799560245,
+        0.005587039089269029,
+        -0.0002780735516281553
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 11995
+    },
+    {
+      "id": 16,
+      "name": "Belt 6",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.254250522907928e-8,
+      "position": [
+        2.246866943600559,
+        -1.3637131244579699,
+        0.0812664540580323
+      ],
+      "velocity": [
+        0.005390592555462665,
+        0.009398046978755813,
+        -0.0005588318057395239
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70813
+    },
+    {
+      "id": 17,
+      "name": "Belt 7",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.888909027525243e-8,
+      "position": [
+        -2.0853714440711064,
+        -2.063819192464011,
+        -0.13453461722159243
+      ],
+      "velocity": [
+        0.007185069481026829,
+        -0.0067450303859661045,
+        -0.0004394804599052343
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 48430
+    },
+    {
+      "id": 18,
+      "name": "Belt 8",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.0573728641540218e-7,
+      "position": [
+        -1.928683102864889,
+        2.423747189279454,
+        -0.10995130209018968
+      ],
+      "velocity": [
+        -0.007658536329985406,
+        -0.00605575687423029,
+        0.00027517278933661773
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 27689
+    },
+    {
+      "id": 19,
+      "name": "Belt 9",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.6015074463184614e-8,
+      "position": [
+        -1.4493351237371266,
+        1.5650250251055517,
+        0.05857884189803655
+      ],
+      "velocity": [
+        -0.0086613903434457,
+        -0.007944241855439942,
+        -0.00029739441469617717
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 28619
+    },
+    {
+      "id": 20,
+      "name": "Belt 10",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.6155448709984015e-8,
+      "position": [
+        -1.0270846126497397,
+        -2.5142534815344124,
+        -0.0713813506051523
+      ],
+      "velocity": [
+        0.009776347264342256,
+        -0.0032920292143202123,
+        -0.0000934188660562446
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 53388
+    },
+    {
+      "id": 21,
+      "name": "Belt 11",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 4.652284708786943e-8,
+      "position": [
+        2.142334101235698,
+        -1.2990227188354133,
+        0.066711094821476
+      ],
+      "velocity": [
+        0.0056174012550591484,
+        0.00933900845414795,
+        -0.00047845358706633293
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70820
+    },
+    {
+      "id": 22,
+      "name": "Belt 12",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.569854108219739e-8,
+      "position": [
+        2.1464530644837168,
+        0.6050190556841624,
+        -0.01370084075280304
+      ],
+      "velocity": [
+        -0.0030601709346143374,
+        0.011360508512705288,
+        -0.00025885701831899094
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 3384
+    },
+    {
+      "id": 23,
+      "name": "Belt 13",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 8.197848405048959e-8,
+      "position": [
+        -1.8338267809947542,
+        -2.703872065351041,
+        -0.12340826163151171
+      ],
+      "velocity": [
+        0.007955297405671012,
+        -0.005016988633066867,
+        -0.00022890277282510083
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 50824
+    },
+    {
+      "id": 24,
+      "name": "Belt 14",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.0560424487411005e-7,
+      "position": [
+        1.6857519352975612,
+        -1.3730145124389619,
+        -0.02858648567824677
+      ],
+      "velocity": [
+        0.007265914042903993,
+        0.009335830946833119,
+        0.00019452438406591786
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 69116
+    },
+    {
+      "id": 25,
+      "name": "Belt 15",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0967720203472854e-7,
+      "position": [
+        2.917726022810739,
+        -0.600935880812062,
+        -0.03903933463282657
+      ],
+      "velocity": [
+        0.0019755620463713145,
+        0.009953616060957111,
+        0.000645586415392087
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 75045
+    },
+    {
+      "id": 26,
+      "name": "Belt 16",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.837345992795192e-8,
+      "position": [
+        -1.451295535754679,
+        2.721159612589971,
+        0.006153757479922928
+      ],
+      "velocity": [
+        -0.008648557614971263,
+        -0.004610037175365356,
+        -0.000010269960395006543
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 25445
+    },
+    {
+      "id": 27,
+      "name": "Belt 17",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.599102287686164e-8,
+      "position": [
+        -2.706878399263604,
+        -1.0201430678415073,
+        -0.06810078322530319
+      ],
+      "velocity": [
+        0.0036635555331852115,
+        -0.00912957852680727,
+        -0.0006088624720242813
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 43247
+    },
+    {
+      "id": 28,
+      "name": "Belt 18",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.59063937921112e-8,
+      "position": [
+        -2.583557571359002,
+        -0.868024550641023,
+        -0.028930958784074902
+      ],
+      "velocity": [
+        0.0033924107417408074,
+        -0.009604446183317135,
+        -0.00031998752618704184
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42792
+    },
+    {
+      "id": 29,
+      "name": "Belt 19",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.4691527880921616e-8,
+      "position": [
+        2.2343893443249625,
+        -0.8260821381017474,
+        0.05514300850369304
+      ],
+      "velocity": [
+        0.0038738819518789424,
+        0.010428855011329244,
+        -0.0006938818020611468
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 73175
+    },
+    {
+      "id": 30,
+      "name": "Belt 20",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 9.693008078405141e-8,
+      "position": [
+        -2.364998323974709,
+        -1.603544547317057,
+        -0.02660139669090029
+      ],
+      "velocity": [
+        0.005709961112993813,
+        -0.008408845811307191,
+        -0.0001395490558685101
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 46143
+    },
+    {
+      "id": 31,
+      "name": "Belt 21",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.524684360386973e-8,
+      "position": [
+        -1.9574672191252105,
+        -2.6862702038115702,
+        -0.18273859872929718
+      ],
+      "velocity": [
+        0.007663288360682466,
+        -0.005375569046629172,
+        -0.00036554792596720924
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 50415
+    },
+    {
+      "id": 32,
+      "name": "Belt 22",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 9.407728565175382e-8,
+      "position": [
+        2.6827770197849117,
+        -0.095929193988547,
+        0.00497759574888812
+      ],
+      "velocity": [
+        0.0003667565010439787,
+        0.01078208114337864,
+        -0.0005436969471297139
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 77115
+    },
+    {
+      "id": 33,
+      "name": "Belt 23",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.419860733584223e-8,
+      "position": [
+        0.6788977150722861,
+        2.689526712650338,
+        -0.038919240042466254
+      ],
+      "velocity": [
+        -0.01000911257862774,
+        0.0026408771665336287,
+        -0.00003819372490229141
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 16340
+    },
+    {
+      "id": 34,
+      "name": "Belt 24",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.49420819340099e-8,
+      "position": [
+        2.967883957890007,
+        -0.1803328222106632,
+        -0.00397858421423704
+      ],
+      "velocity": [
+        0.0005908756506605547,
+        0.010211748300244149,
+        0.0002260195415146986
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 76809
+    },
+    {
+      "id": 35,
+      "name": "Belt 25",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 7.446395761855932e-8,
+      "position": [
+        0.374075883905208,
+        2.9234296003717035,
+        -0.0043470844749852544
+      ],
+      "velocity": [
+        -0.00990576258138105,
+        0.0019337387596195896,
+        -0.0000028299255825318923
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 17822
+    },
+    {
+      "id": 36,
+      "name": "Belt 26",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 7.192692989967827e-8,
+      "position": [
+        -3.0346205209007455,
+        -1.0877868675191524,
+        0.047252143699208105
+      ],
+      "velocity": [
+        0.003328547180884426,
+        -0.00868034020230044,
+        0.00037618397143792217
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 43041
+    },
+    {
+      "id": 37,
+      "name": "Belt 27",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 6.126807861018581e-8,
+      "position": [
+        -2.5612270487693043,
+        1.0348253217336336,
+        -0.03593371827531904
+      ],
+      "velocity": [
+        -0.0039005530188684907,
+        -0.009516038706254984,
+        0.0003315863817935405
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 34048
+    },
+    {
+      "id": 38,
+      "name": "Belt 28",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.124873414710295e-8,
+      "position": [
+        2.2788690044011455,
+        0.3490943843157306,
+        -0.015811834287086025
+      ],
+      "velocity": [
+        -0.0017147970587447327,
+        0.011192758234909152,
+        -0.0005110197739877413
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 1869
+    },
+    {
+      "id": 39,
+      "name": "Belt 29",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.4120831873318465e-8,
+      "position": [
+        1.3906276054440372,
+        2.701484774947524,
+        -0.16597266536969982
+      ],
+      "velocity": [
+        -0.008644351140351825,
+        0.005098959902953105,
+        -0.0003134146551486239
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 13531
+    },
+    {
+      "id": 40,
+      "name": "Belt 30",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.398179233436902e-8,
+      "position": [
+        -1.773181236176446,
+        2.1452746075482465,
+        -0.03938628596305725
+      ],
+      "velocity": [
+        -0.008083417276105433,
+        -0.006144461966063766,
+        0.000113147785966262
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 27924
+    },
+    {
+      "id": 41,
+      "name": "Belt 31",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 9.273453841238394e-8,
+      "position": [
+        0.8663150790929524,
+        -2.760946052364265,
+        -0.011517879700155362
+      ],
+      "velocity": [
+        0.00956246009342889,
+        0.003560277686652013,
+        0.000014982259814983702
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 61922
+    },
+    {
+      "id": 42,
+      "name": "Belt 32",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.469651810393673e-8,
+      "position": [
+        0.4586678256306334,
+        -2.724659565775297,
+        -0.010326289772310116
+      ],
+      "velocity": [
+        0.0101803643784809,
+        0.0019234639421714245,
+        0.00000739526747139247
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 60228
+    },
+    {
+      "id": 43,
+      "name": "Belt 33",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.13920319359976e-8,
+      "position": [
+        0.3671821030241274,
+        -2.3407208581579537,
+        -0.1070986562026386
+      ],
+      "velocity": [
+        0.010977897686082514,
+        0.0023584102857186215,
+        0.00010790282645181615
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 60088
+    },
+    {
+      "id": 44,
+      "name": "Belt 34",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.646769961470679e-8,
+      "position": [
+        -1.6915140527926382,
+        2.009626798450747,
+        -0.06969197380452574
+      ],
+      "velocity": [
+        -0.008296861958494136,
+        -0.006280693110954635,
+        0.0002182773055314844
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 28033
+    },
+    {
+      "id": 45,
+      "name": "Belt 35",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.11938561326754e-8,
+      "position": [
+        -3.0148179865470035,
+        -1.0027702834214167,
+        -0.06660862106400911
+      ],
+      "velocity": [
+        0.0030916435944001964,
+        -0.008978948864382197,
+        -0.0005958349580164354
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42760
+    },
+    {
+      "id": 46,
+      "name": "Belt 36",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.711791103224367e-8,
+      "position": [
+        1.8186060601388372,
+        -1.6167313892761213,
+        0.04678453252338657
+      ],
+      "velocity": [
+        0.0072269902868625936,
+        0.008526155785683566,
+        -0.00024608037766970825
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 68583
+    },
+    {
+      "id": 47,
+      "name": "Belt 37",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 7.074887331679433e-8,
+      "position": [
+        -3.189791263172646,
+        1.339634545202645,
+        -0.0007645734995977364
+      ],
+      "velocity": [
+        -0.0036828498589931767,
+        -0.008209164032227706,
+        0.000005081713518089342
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 33881
+    },
+    {
+      "id": 48,
+      "name": "Belt 38",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.332387938703352e-8,
+      "position": [
+        1.6480473257760055,
+        2.684878571255617,
+        0.059016882012363825
+      ],
+      "velocity": [
+        -0.008184875790869444,
+        0.005390459134382901,
+        0.00011851732948455884
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 12595
+    },
+    {
+      "id": 49,
+      "name": "Belt 39",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.288572690483259e-8,
+      "position": [
+        -1.9728683780123462,
+        1.7657703712051331,
+        0.08781394049730465
+      ],
+      "velocity": [
+        -0.007168926245512476,
+        -0.007535975365755395,
+        -0.0003749096501594348
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 29771
+    },
+    {
+      "id": 50,
+      "name": "Belt 40",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.2986925528270354e-8,
+      "position": [
+        2.054300572643315,
+        -0.4620434261046336,
+        -0.01498683979222539
+      ],
+      "velocity": [
+        0.0025489368549245135,
+        0.011852631523208658,
+        0.00038433330016646026
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 74822
+    },
+    {
+      "id": 51,
+      "name": "Belt 41",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 4.5196313683151276e-8,
+      "position": [
+        2.148462464328443,
+        -1.0719669336298234,
+        -0.03299563527480443
+      ],
+      "velocity": [
+        0.0049500697523213845,
+        0.009955955110993253,
+        0.0003064604388117531
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 71840
+    },
+    {
+      "id": 52,
+      "name": "Belt 42",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.199868043982949e-8,
+      "position": [
+        2.862685993009023,
+        -0.3822263212743511,
+        0.014720480509177637
+      ],
+      "velocity": [
+        0.0012989781402881417,
+        0.010368004306694573,
+        -0.0003959833456835888
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 75918
+    },
+    {
+      "id": 53,
+      "name": "Belt 43",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.1704365361129745e-8,
+      "position": [
+        0.17451786432960625,
+        -2.730817263492855,
+        -0.08145400181501102
+      ],
+      "velocity": [
+        0.010358304089745583,
+        0.0009437869135826383,
+        0.000028193912827840096
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 58958
+    },
+    {
+      "id": 54,
+      "name": "Belt 44",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 7.590980492500342e-8,
+      "position": [
+        -0.4087105380842905,
+        2.956079191412095,
+        0.038907038524355717
+      ],
+      "velocity": [
+        -0.009900758217219712,
+        -0.0009354894360810573,
+        -0.000012240593304329024
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 21091
+    },
+    {
+      "id": 55,
+      "name": "Belt 45",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.67873215222172e-8,
+      "position": [
+        -2.6346090556304618,
+        0.609754070047636,
+        0.0189487007286055
+      ],
+      "velocity": [
+        -0.0023690492150702618,
+        -0.010131870977066044,
+        -0.0003148797286707999
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 35982
+    },
+    {
+      "id": 56,
+      "name": "Belt 46",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.947308084371951e-8,
+      "position": [
+        1.5174389262771373,
+        2.178502589810204,
+        0.13792566268805223
+      ],
+      "velocity": [
+        -0.008520458045986482,
+        0.0065540081251501585,
+        0.00041513361280088034
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 11890
+    },
+    {
+      "id": 57,
+      "name": "Belt 47",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.357184694099379e-8,
+      "position": [
+        2.000312939721469,
+        -1.2660502056547625,
+        0.01903613986020207
+      ],
+      "velocity": [
+        0.005890960971159064,
+        0.009702240972272331,
+        -0.0001451955340972869
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70589
+    },
+    {
+      "id": 58,
+      "name": "Belt 48",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.932613807824774e-8,
+      "position": [
+        -2.9063832837392116,
+        0.1273812869593696,
+        -0.0038318965827332722
+      ],
+      "velocity": [
+        -0.00045536834578240493,
+        -0.009742702711852342,
+        0.00030121209186104506
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 38249
+    },
+    {
+      "id": 59,
+      "name": "Belt 49",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.062118025502545e-7,
+      "position": [
+        2.33715469113508,
+        -1.4894337550337173,
+        0.034716474096610696
+      ],
+      "velocity": [
+        0.0054284092106404525,
+        0.009072451184222011,
+        -0.00021080209066726087
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70551
+    },
+    {
+      "id": 60,
+      "name": "Belt 50",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.1059172093468424e-7,
+      "position": [
+        0.05204765912132189,
+        -3.1058118262406698,
+        0.1444337640678969
+      ],
+      "velocity": [
+        0.009745713493459334,
+        0.00016361737438368696,
+        -0.000007467768985840586
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 58377
+    },
+    {
+      "id": 61,
+      "name": "Belt 51",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.385056903210025e-8,
+      "position": [
+        -1.9594228233300985,
+        -1.2295972107351072,
+        0.03938922863343551
+      ],
+      "velocity": [
+        0.006180180888483302,
+        -0.00909378123524113,
+        0.000290640852500454
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 45709
+    },
+    {
+      "id": 62,
+      "name": "Belt 52",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.9656883146812033e-8,
+      "position": [
+        -3.0184262331204494,
+        1.0511932864157059,
+        -0.06487257478944297
+      ],
+      "velocity": [
+        -0.003247404312405873,
+        -0.008795099346083574,
+        0.0005442576914243969
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 34645
+    },
+    {
+      "id": 63,
+      "name": "Belt 53",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.1158317369938382e-7,
+      "position": [
+        0.5363993929434914,
+        -2.1271791141580767,
+        0.0353663744157214
+      ],
+      "velocity": [
+        0.011245095206346551,
+        0.0029004148162929387,
+        -0.000048014799541740796
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 61216
+    },
+    {
+      "id": 64,
+      "name": "Belt 54",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.268645393889082e-8,
+      "position": [
+        -2.4947122078139534,
+        0.2739537748517984,
+        -0.014925549280213031
+      ],
+      "velocity": [
+        -0.0012052771373177288,
+        -0.010582764833447916,
+        0.000582395605047482
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 37439
+    },
+    {
+      "id": 65,
+      "name": "Belt 55",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.720176387087074e-8,
+      "position": [
+        -0.9059480469396995,
+        2.6102857215198676,
+        0.09926578600987764
+      ],
+      "velocity": [
+        -0.009799368320265291,
+        -0.0032763905907183446,
+        -0.0001245832903350893
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 23518
+    },
+    {
+      "id": 66,
+      "name": "Belt 56",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.273968085550881e-8,
+      "position": [
+        -0.6340383766986051,
+        -3.03016598706287,
+        0.1347389821826224
+      ],
+      "velocity": [
+        0.009559551012608799,
+        -0.001972202023086793,
+        0.0000877438281786133
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 55629
+    },
+    {
+      "id": 67,
+      "name": "Belt 57",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0290262277620709e-7,
+      "position": [
+        -1.095492373347503,
+        2.2417702469718384,
+        0.04520634292784558
+      ],
+      "velocity": [
+        -0.009917815023928918,
+        -0.004199324556046309,
+        -0.00008459770160878621
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 25009
+    },
+    {
+      "id": 68,
+      "name": "Belt 58",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 2.2872028023161544e-8,
+      "position": [
+        -0.10775897909197203,
+        2.223220867959379,
+        0.06006305802239079
+      ],
+      "velocity": [
+        -0.011543525097553343,
+        0.00023695486581521463,
+        0.000006448111711321153
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 19993
+    },
+    {
+      "id": 69,
+      "name": "Belt 59",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.530226266022168e-8,
+      "position": [
+        0.3962409759181878,
+        -2.129575111799862,
+        0.021928670881137136
+      ],
+      "velocity": [
+        0.011444420392571509,
+        0.0025461242040200264,
+        -0.000026044761352436415
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 60439
+    },
+    {
+      "id": 70,
+      "name": "Belt 60",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.9639802934945388e-8,
+      "position": [
+        0.8384824076806646,
+        2.8586000153966644,
+        -0.10415573783180845
+      ],
+      "velocity": [
+        -0.009553691236354432,
+        0.0029160503585053356,
+        -0.00010624353904116542
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 15872
+    },
+    {
+      "id": 71,
+      "name": "Belt 61",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.0164501250298839e-7,
+      "position": [
+        1.8764688613095275,
+        -1.010978220224599,
+        -0.062284193482224845
+      ],
+      "velocity": [
+        0.005593576557039603,
+        0.010359349406255325,
+        0.0006376363170280355
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 71444
+    },
+    {
+      "id": 72,
+      "name": "Belt 62",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.187312959376331e-8,
+      "position": [
+        -2.907920021376104,
+        -0.3297457632577833,
+        0.015304326784182457
+      ],
+      "velocity": [
+        0.0011633920196902285,
+        -0.009722978801237424,
+        0.00044753045343712863
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40185
+    },
+    {
+      "id": 73,
+      "name": "Belt 63",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.0838259114180423e-8,
+      "position": [
+        2.431443892692899,
+        1.1395812930191507,
+        0.054934950456143085
+      ],
+      "velocity": [
+        -0.004362242889158634,
+        0.009805135208963454,
+        0.0004729823110514166
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 5410
+    },
+    {
+      "id": 74,
+      "name": "Belt 64",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 7.053990266087889e-8,
+      "position": [
+        -0.36288023789783586,
+        2.5171712896816003,
+        0.14788628605003762
+      ],
+      "velocity": [
+        -0.010678819201768113,
+        -0.001494447826473963,
+        -0.00008782230317685637
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 21160
+    },
+    {
+      "id": 75,
+      "name": "Belt 65",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.8933410278714468e-8,
+      "position": [
+        1.0772641963714176,
+        -2.1555207548779696,
+        -0.08834477951274369
+      ],
+      "velocity": [
+        0.00985265287188487,
+        0.005179965367030377,
+        0.0002122820198361316
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 63884
+    },
+    {
+      "id": 76,
+      "name": "Belt 66",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0020526833331346e-7,
+      "position": [
+        -2.024736423225429,
+        -2.369873311736321,
+        -0.12084240086910293
+      ],
+      "velocity": [
+        0.007524931843521761,
+        -0.005923648279229914,
+        -0.0003019381048723769
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 49456
+    },
+    {
+      "id": 77,
+      "name": "Belt 67",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 8.376370799358168e-8,
+      "position": [
+        -1.586432529457468,
+        -2.494827444264719,
+        0.03375193857153837
+      ],
+      "velocity": [
+        0.008484055244078154,
+        -0.005177535325252793,
+        0.00006998649539247649
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 51184
+    },
+    {
+      "id": 78,
+      "name": "Belt 68",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 4.6195505787904347e-8,
+      "position": [
+        -1.0980286617803754,
+        -2.1602504687737465,
+        -0.029599084553494436
+      ],
+      "velocity": [
+        0.00992031389482015,
+        -0.004655358753880231,
+        -0.00006378094654129633
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 52370
+    },
+    {
+      "id": 79,
+      "name": "Belt 69",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.613610898606828e-8,
+      "position": [
+        -2.979701928672102,
+        -0.36513472847608647,
+        -0.012141733653264663
+      ],
+      "velocity": [
+        0.0012185143258966204,
+        -0.00976012194025136,
+        -0.0003243078119892221
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40295
+    },
+    {
+      "id": 80,
+      "name": "Belt 70",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.750280762587391e-8,
+      "position": [
+        -2.552927890615458,
+        -0.8964356011560083,
+        0.047166877441944755
+      ],
+      "velocity": [
+        0.0035652078201718895,
+        -0.009509600035954736,
+        0.0004989862106747781
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42963
+    },
+    {
+      "id": 81,
+      "name": "Belt 71",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.753695946164086e-8,
+      "position": [
+        -2.6180455167990915,
+        1.4642919266854586,
+        -0.08627869906025104
+      ],
+      "velocity": [
+        -0.00494925162762258,
+        -0.008377026018794288,
+        0.0004946200147393297
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 32486
+    },
+    {
+      "id": 82,
+      "name": "Belt 72",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0814768923850532e-7,
+      "position": [
+        -1.2117105720797052,
+        2.738721917976989,
+        0.07468665022648086
+      ],
+      "velocity": [
+        -0.009161428371171374,
+        -0.00369328854455018,
+        -0.00010066792666807275
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 24537
+    },
+    {
+      "id": 83,
+      "name": "Belt 73",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.1119627372207295e-7,
+      "position": [
+        0.3437591004087702,
+        2.1252620032263336,
+        -0.015790677835480257
+      ],
+      "velocity": [
+        -0.011534978616207558,
+        0.0024869278998651636,
+        -0.000018464576256071176
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 17414
+    },
+    {
+      "id": 84,
+      "name": "Belt 74",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.272285784591057e-8,
+      "position": [
+        -2.448916290067043,
+        -0.5375721366781188,
+        -0.03763923755478662
+      ],
+      "velocity": [
+        0.0024069282794064333,
+        -0.01023386194771315,
+        -0.0007151813803944819
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 41464
+    },
+    {
+      "id": 85,
+      "name": "Belt 75",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0809901122195223e-7,
+      "position": [
+        2.1457842270304965,
+        0.5917590928568215,
+        -0.02682615700347854
+      ],
+      "velocity": [
+        -0.0030181880420815993,
+        0.01131461164934758,
+        -0.000515285762870342
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 3316
+    },
+    {
+      "id": 86,
+      "name": "Belt 76",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 8.370304721475135e-8,
+      "position": [
+        -3.0398660905220396,
+        0.34726747852670065,
+        -0.023791987769818144
+      ],
+      "velocity": [
+        -0.0011265667647377695,
+        -0.009670398204960993,
+        0.0006674772966803834
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 37382
+    },
+    {
+      "id": 87,
+      "name": "Belt 77",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.003888526368232e-8,
+      "position": [
+        -0.6800621289372835,
+        2.3990066481442263,
+        0.14761241852806348
+      ],
+      "velocity": [
+        -0.010533932130097927,
+        -0.0025678426202837947,
+        -0.0001580565287810795
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 22801
+    },
+    {
+      "id": 88,
+      "name": "Belt 78",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 6.862856385444262e-8,
+      "position": [
+        -1.972922139842498,
+        -2.2199887873735076,
+        0.12303511828235554
+      ],
+      "velocity": [
+        0.007509284195764074,
+        -0.006443282831193214,
+        0.00035681264606391105
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 49217
+    },
+    {
+      "id": 89,
+      "name": "Belt 79",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 2.5306087694623857e-8,
+      "position": [
+        1.1402085874861292,
+        -2.4643009681259196,
+        -0.05918783074603748
+      ],
+      "velocity": [
+        0.009406063213605684,
+        0.0046761907423121685,
+        0.00011237979271618938
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 63516
+    },
+    {
+      "id": 90,
+      "name": "Belt 80",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.769118159498758e-8,
+      "position": [
+        0.046887220475828655,
+        -2.777088655029122,
+        -0.010438019532389911
+      ],
+      "velocity": [
+        0.010307198810768435,
+        0.0007334225775552877,
+        0.0000028427448355733935
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 58379
+    },
+    {
+      "id": 91,
+      "name": "Belt 81",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.490261586093992e-8,
+      "position": [
+        0.24292280144405382,
+        -2.809859176873702,
+        -0.06872297577313906
+      ],
+      "velocity": [
+        0.010177196643267434,
+        0.0013063370773109546,
+        0.00003200360728634774
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 59234
+    },
+    {
+      "id": 92,
+      "name": "Belt 82",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 8.577786429133448e-8,
+      "position": [
+        -2.291715931528053,
+        -2.341031683665895,
+        -0.05709427395859597
+      ],
+      "velocity": [
+        0.00693377494469462,
+        -0.006201068896368615,
+        -0.00015120574069494647
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 48614
+    },
+    {
+      "id": 93,
+      "name": "Belt 83",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.8430311456559692e-8,
+      "position": [
+        1.8803427769265366,
+        -1.2583549891534012,
+        0.05226794715011819
+      ],
+      "velocity": [
+        0.0061889955914202705,
+        0.009997828097188665,
+        -0.00041416949772566183
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70270
+    },
+    {
+      "id": 94,
+      "name": "Belt 84",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.715216539492925e-8,
+      "position": [
+        -0.4008387161012458,
+        2.978951944744804,
+        0.13517065571572068
+      ],
+      "velocity": [
+        -0.009860069214637775,
+        -0.0009647346422468486,
+        -0.00004375943899859118
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 21045
+    },
+    {
+      "id": 95,
+      "name": "Belt 85",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.172203108838562e-8,
+      "position": [
+        -1.200154371464465,
+        2.2457477111881725,
+        0.04575148188601288
+      ],
+      "velocity": [
+        -0.009623722646681062,
+        -0.0046093190137928034,
+        -0.00009381793691397922
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 25456
+    },
+    {
+      "id": 96,
+      "name": "Belt 86",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.4181326267695305e-8,
+      "position": [
+        1.380841686027137,
+        1.9281231725533188,
+        -0.10910666792866844
+      ],
+      "velocity": [
+        -0.008920632380353025,
+        0.007086743851190331,
+        -0.0004014222426799109
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 11726
+    },
+    {
+      "id": 97,
+      "name": "Belt 87",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.875821237188775e-8,
+      "position": [
+        2.9790022331068746,
+        0.08075495782365028,
+        0.002415190613213126
+      ],
+      "velocity": [
+        -0.00026964583156138805,
+        0.009959489416568702,
+        0.0002981341046031385
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 327
+    },
+    {
+      "id": 98,
+      "name": "Belt 88",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.1126247839260673e-7,
+      "position": [
+        -2.144271164962748,
+        1.867003348135286,
+        0.028431925548791405
+      ],
+      "velocity": [
+        -0.006879184377208425,
+        -0.007189692399988396,
+        -0.00010933612330298037
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 29946
+    },
+    {
+      "id": 99,
+      "name": "Belt 89",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 9.059463795687657e-8,
+      "position": [
+        0.22886768736474952,
+        -2.4092849688927616,
+        -0.05435239384570132
+      ],
+      "velocity": [
+        0.010984744618051812,
+        0.0013241504761111868,
+        0.000029930457733792774
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 59338
+    },
+    {
+      "id": 100,
+      "name": "Belt 90",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 6.746779565982697e-8,
+      "position": [
+        0.07260476140542257,
+        2.9827252196399408,
+        0.04758320878570696
+      ],
+      "velocity": [
+        -0.009960382729855648,
+        0.0005060007526523985,
+        0.000008128341155366195
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 19094
+    },
+    {
+      "id": 101,
+      "name": "Belt 91",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.9745307747362522e-8,
+      "position": [
+        1.3301468335780653,
+        2.184337052107968,
+        0.08004110557321123
+      ],
+      "velocity": [
+        -0.009157351084425542,
+        0.005736896622200325,
+        0.00021028938465543983
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 12641
+    },
+    {
+      "id": 102,
+      "name": "Belt 92",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 4.586904884453848e-8,
+      "position": [
+        1.6614165405505517,
+        -1.4032869542722288,
+        -0.0852766600091605
+      ],
+      "velocity": [
+        0.007466814837880173,
+        0.00907058320728919,
+        0.000550858277749387
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 68885
+    },
+    {
+      "id": 103,
+      "name": "Belt 93",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.190933885839257e-8,
+      "position": [
+        0.9564101955990232,
+        2.741117139098219,
+        -0.18553228011603407
+      ],
+      "velocity": [
+        -0.009440321247297684,
+        0.0038794788829060547,
+        -0.00026266240984562384
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 15256
+    },
+    {
+      "id": 104,
+      "name": "Belt 94",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.415141857140097e-8,
+      "position": [
+        -2.5751569733828634,
+        0.7259997274544144,
+        -0.03509847699550238
+      ],
+      "velocity": [
+        -0.0028999284245638463,
+        -0.009925592996886631,
+        0.0004818448848208514
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 35395
+    },
+    {
+      "id": 105,
+      "name": "Belt 95",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.043043369661276e-8,
+      "position": [
+        -1.8849062082097225,
+        0.9519878008056872,
+        0.0178931897637499
+      ],
+      "velocity": [
+        -0.005334278433987356,
+        -0.010564893295761916,
+        -0.00019832034190711987
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 33019
+    },
+    {
+      "id": 106,
+      "name": "Belt 96",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.357032430783445e-8,
+      "position": [
+        1.3963433886983354,
+        -1.5753400129347503,
+        -0.059887945758167166
+      ],
+      "velocity": [
+        0.008784037631387479,
+        0.00812768193822789,
+        0.00030893231679185874
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 67112
+    },
+    {
+      "id": 107,
+      "name": "Belt 97",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.766979411377531e-8,
+      "position": [
+        -1.5272362430578386,
+        2.6405114789470816,
+        0.17038116494442523
+      ],
+      "velocity": [
+        -0.008679146670143344,
+        -0.00431077331788646,
+        -0.0002782560237901726
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 25859
+    },
+    {
+      "id": 108,
+      "name": "Belt 98",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.0014086127789386e-7,
+      "position": [
+        -1.062487781889242,
+        -2.9365147781788905,
+        -0.179270700462009
+      ],
+      "velocity": [
+        0.009227964345040333,
+        -0.002779980752592345,
+        -0.0001696547579902126
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 53895
+    },
+    {
+      "id": 109,
+      "name": "Belt 99",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.413929182032921e-8,
+      "position": [
+        -1.3551603031357777,
+        2.1153739930215143,
+        0.08727682974548776
+      ],
+      "velocity": [
+        -0.009194400902047576,
+        -0.005652428967123404,
+        -0.00023323797466108496
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 26428
+    },
+    {
+      "id": 110,
+      "name": "Belt 100",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 8.977829762734285e-8,
+      "position": [
+        0.1380032376037292,
+        2.1621594435507734,
+        0.023635605953808484
+      ],
+      "velocity": [
+        -0.01165818634450251,
+        0.0012118465884008364,
+        0.000013295598947800225
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 18608
+    },
+    {
+      "id": 111,
+      "name": "Belt 101",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.9361420139828655e-8,
+      "position": [
+        2.7030309932111813,
+        0.24047769048803105,
+        -0.006621369316338937
+      ],
+      "velocity": [
+        -0.0008969897477965818,
+        0.01072875524851154,
+        -0.00029974020979708335
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 1088
+    },
+    {
+      "id": 112,
+      "name": "Belt 102",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.103397799211043e-8,
+      "position": [
+        -2.1922351172695933,
+        1.545186667179448,
+        -0.09701677522391247
+      ],
+      "velocity": [
+        -0.0060647507227396475,
+        -0.008542307170678604,
+        0.0005373841084028642
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 31200
+    },
+    {
+      "id": 113,
+      "name": "Belt 103",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.172526896673668e-8,
+      "position": [
+        0.3943735083946613,
+        -2.8537279336384653,
+        -0.11889952351335223
+      ],
+      "velocity": [
+        0.009992833910018265,
+        0.001894660141884413,
+        0.00007895487912048987
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 59864
+    },
+    {
+      "id": 114,
+      "name": "Belt 104",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 9.167750965218187e-8,
+      "position": [
+        -2.831309462646385,
+        -0.5033478212080194,
+        -0.02892644887060143
+      ],
+      "velocity": [
+        0.001838288468240411,
+        -0.009620819528780156,
+        -0.0005519253452270528
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40965
+    },
+    {
+      "id": 115,
+      "name": "Belt 105",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0818225992182704e-7,
+      "position": [
+        0.8968090188835887,
+        -3.0503332752535934,
+        -0.17475758250452422
+      ],
+      "velocity": [
+        0.009212777409055177,
+        0.002925970176346953,
+        0.0001675957811526834
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 61694
+    },
+    {
+      "id": 116,
+      "name": "Belt 106",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.300647710750108e-8,
+      "position": [
+        2.44560699790215,
+        -0.6507624366529183,
+        0.0003424948453328295
+      ],
+      "velocity": [
+        0.002757184962673596,
+        0.010562192262327174,
+        -0.0000046449108075834085
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 74346
+    },
+    {
+      "id": 117,
+      "name": "Belt 107",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.689185092999685e-8,
+      "position": [
+        -1.738288008384734,
+        -1.9287636631129517,
+        -0.06721402106836426
+      ],
+      "velocity": [
+        0.008069833327049742,
+        -0.00668569019252535,
+        -0.00023291082329695702
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 49125
+    },
+    {
+      "id": 118,
+      "name": "Belt 108",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.569016446298045e-8,
+      "position": [
+        0.7056066640482908,
+        -2.6979066637442335,
+        0.15700211226192864
+      ],
+      "velocity": [
+        0.009880868627630691,
+        0.0031597564721302734,
+        -0.00018355230515666921
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 61322
+    },
+    {
+      "id": 119,
+      "name": "Belt 109",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.054102531846455e-7,
+      "position": [
+        0.39512075413991365,
+        -2.2644254907639674,
+        -0.0756241738412133
+      ],
+      "velocity": [
+        0.011139037043959342,
+        0.0022593018814980256,
+        0.00007548442872060853
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 60300
+    },
+    {
+      "id": 120,
+      "name": "Belt 110",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.459152897360087e-8,
+      "position": [
+        1.4634865112505093,
+        2.0270679548758155,
+        0.1389305670181571
+      ],
+      "velocity": [
+        -0.00866276850038418,
+        0.006927922116826859,
+        0.0004750589812774468
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 11683
+    },
+    {
+      "id": 121,
+      "name": "Belt 111",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.933374405106433e-8,
+      "position": [
+        -2.3766493991241666,
+        -0.6793422156278195,
+        0.002889729025464155
+      ],
+      "velocity": [
+        0.0030668726257585687,
+        -0.010276926917412537,
+        0.0000429226031104418
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42227
+    },
+    {
+      "id": 122,
+      "name": "Belt 112",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.4287517546042547e-8,
+      "position": [
+        2.286994588954117,
+        1.6356371282009783,
+        0.07735452723247078
+      ],
+      "velocity": [
+        -0.005874596056174195,
+        0.008623791046695193,
+        0.00040803973882780966
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 7666
+    },
+    {
+      "id": 123,
+      "name": "Belt 113",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 3.274628591659108e-8,
+      "position": [
+        -1.2936159526281636,
+        2.8591121180700654,
+        0.12625722353094398
+      ],
+      "velocity": [
+        -0.008859549961087577,
+        -0.003952781003184169,
+        -0.00017456379315349064
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 24637
+    },
+    {
+      "id": 124,
+      "name": "Belt 114",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.772556392883155e-8,
+      "position": [
+        1.4673189742624861,
+        1.9300361560035777,
+        -0.07512909770266542
+      ],
+      "velocity": [
+        -0.008655259622324782,
+        0.007185521334173709,
+        -0.0002800231057168613
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 11369
+    },
+    {
+      "id": 125,
+      "name": "Belt 115",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.024829120572388e-8,
+      "position": [
+        2.58969272822256,
+        1.0930809943531297,
+        0.07199943225659465
+      ],
+      "velocity": [
+        -0.003985248273081286,
+        0.009475025910798136,
+        0.0006246676024604607
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 4934
+    },
+    {
+      "id": 126,
+      "name": "Belt 116",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 7.604485746065835e-8,
+      "position": [
+        2.4263841343092074,
+        -1.152053195981594,
+        -0.04886768864580885
+      ],
+      "velocity": [
+        0.004481829292720077,
+        0.009543434742174665,
+        0.0004046449109575401
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 72080
+    },
+    {
+      "id": 127,
+      "name": "Belt 117",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.079916831992793e-8,
+      "position": [
+        0.33124773050649037,
+        2.1099694971313867,
+        0.026023672261514464
+      ],
+      "velocity": [
+        -0.011626866842875056,
+        0.001974911876977915,
+        0.00002439504326493792
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 17471
+    },
+    {
+      "id": 128,
+      "name": "Belt 118",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.3949586265216445e-8,
+      "position": [
+        -2.6274623180695444,
+        0.36031324420389493,
+        -0.01978317969113651
+      ],
+      "velocity": [
+        -0.001443576189655725,
+        -0.010383724886775943,
+        0.0005745215036008488
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 37106
+    },
+    {
+      "id": 129,
+      "name": "Belt 119",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.239422739264012e-8,
+      "position": [
+        -3.319284174566817,
+        0.6454178706530461,
+        0.014450708313312598
+      ],
+      "velocity": [
+        -0.0018274658905391798,
+        -0.008954971369900732,
+        -0.00020028831051558283
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 36418
+    },
+    {
+      "id": 130,
+      "name": "Belt 120",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.875516592464036e-8,
+      "position": [
+        -1.6341298569844165,
+        -1.5287904588560735,
+        -0.015319476313888108
+      ],
+      "velocity": [
+        0.007916288476252767,
+        -0.008198045332784402,
+        -0.00008225985121517541
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 48072
+    },
+    {
+      "id": 131,
+      "name": "Belt 121",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.0310396566093437e-7,
+      "position": [
+        -2.2222575518255043,
+        0.15222929731855117,
+        -0.0089635098666551
+      ],
+      "velocity": [
+        -0.0007920094100311354,
+        -0.011372132866571292,
+        0.0006813858826778056
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 37947
+    },
+    {
+      "id": 132,
+      "name": "Belt 122",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.460971859090761e-8,
+      "position": [
+        3.068713061563796,
+        -0.9151977245244538,
+        -0.03448497107337754
+      ],
+      "velocity": [
+        0.0027417370863398933,
+        0.0092343429695743,
+        0.0003478322085034245
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 73978
+    },
+    {
+      "id": 133,
+      "name": "Belt 123",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.846625567154871e-8,
+      "position": [
+        2.819032352864629,
+        0.9762629840295459,
+        -0.004887050611127675
+      ],
+      "velocity": [
+        -0.0031741914432583305,
+        0.009733311403033965,
+        -0.00004923208103485518
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 4109
+    },
+    {
+      "id": 134,
+      "name": "Belt 124",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.767299558261056e-8,
+      "position": [
+        0.7920120391538777,
+        -2.9563948587479763,
+        0.054811123626035976
+      ],
+      "velocity": [
+        0.009478186013410028,
+        0.002636296440576299,
+        -0.00004870150316284122
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 61400
+    },
+    {
+      "id": 135,
+      "name": "Belt 125",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.131961657922793e-8,
+      "position": [
+        -0.8381855226584032,
+        -2.4778034061508367,
+        -0.09691525696920353
+      ],
+      "velocity": [
+        0.010121455174086398,
+        -0.0030393294714468277,
+        -0.00011882400641449707
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 54149
+    },
+    {
+      "id": 136,
+      "name": "Belt 126",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 7.998743803271866e-8,
+      "position": [
+        1.1366959562092205,
+        -2.143397100786171,
+        -0.1344801455484554
+      ],
+      "velocity": [
+        0.009719511349277201,
+        0.005273286755901522,
+        0.00033071291592767267
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 64176
+    },
+    {
+      "id": 137,
+      "name": "Belt 127",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.046675030777772e-8,
+      "position": [
+        2.1259332385029737,
+        1.492294035236591,
+        0.06952331820459419
+      ],
+      "velocity": [
+        -0.006033288715059841,
+        0.009032332588187586,
+        0.0004210118325191191
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 7557
+    },
+    {
+      "id": 138,
+      "name": "Belt 128",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.8910568033382986e-8,
+      "position": [
+        2.2203070587577427,
+        -0.4597311140688497,
+        -0.021049925607051708
+      ],
+      "velocity": [
+        0.0022549708985580602,
+        0.011538027211349531,
+        0.0005275809997888289
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 75032
+    },
+    {
+      "id": 139,
+      "name": "Belt 129",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 9.245768147535952e-8,
+      "position": [
+        2.171513989558878,
+        1.4237945120559197,
+        -0.025146668913539783
+      ],
+      "velocity": [
+        -0.0058019187852841325,
+        0.009089790647305576,
+        -0.00016096287900876444
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 7160
+    },
+    {
+      "id": 140,
+      "name": "Belt 130",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.09610063544592e-8,
+      "position": [
+        -2.304275376218217,
+        -0.4639493138734291,
+        0.010835362457931381
+      ],
+      "velocity": [
+        0.0022255111657348238,
+        -0.010944591028087865,
+        0.0002535614293490021
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 41244
+    },
+    {
+      "id": 141,
+      "name": "Belt 131",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 3.943129694763098e-8,
+      "position": [
+        2.392844416089087,
+        1.2281941126301117,
+        0.08550064067353456
+      ],
+      "velocity": [
+        -0.0046648103644614,
+        0.009718527646904923,
+        0.0006771163829018626
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 5860
+    },
+    {
+      "id": 142,
+      "name": "Belt 132",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0620833730860997e-7,
+      "position": [
+        -3.084521074050149,
+        1.0168879199859582,
+        0.05322943719117196
+      ],
+      "velocity": [
+        -0.003064898743622076,
+        -0.008788146493877992,
+        -0.0004603586333213978
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 34853
+    },
+    {
+      "id": 143,
+      "name": "Belt 133",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 9.217525914528725e-8,
+      "position": [
+        2.0354351889263467,
+        2.3023106165150904,
+        -0.05138108760148905
+      ],
+      "velocity": [
+        -0.007220689599921052,
+        0.006938955151093813,
+        -0.00015502309239557387
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 10453
+    },
+    {
+      "id": 144,
+      "name": "Belt 134",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.419167526828208e-8,
+      "position": [
+        1.878808460427538,
+        1.0845559627784096,
+        0.042484013508070725
+      ],
+      "velocity": [
+        -0.005839566034117186,
+        0.010124025159110097,
+        0.0003967772598576403
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 6460
+    },
+    {
+      "id": 145,
+      "name": "Belt 135",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.498950385721886e-8,
+      "position": [
+        -0.6917837189351532,
+        -2.528050594929305,
+        -0.15361318884830347
+      ],
+      "velocity": [
+        0.010254732338947399,
+        -0.0026188505323218965,
+        -0.00015906593586878469
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 54881
+    },
+    {
+      "id": 146,
+      "name": "Belt 136",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.887475070595291e-8,
+      "position": [
+        -2.7931652871211847,
+        -1.8252693911639157,
+        0.06317131517879643
+      ],
+      "velocity": [
+        0.005198312228184176,
+        -0.00773368643604765,
+        0.00026730649456403597
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 45935
+    },
+    {
+      "id": 147,
+      "name": "Belt 137",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.36316263618812e-8,
+      "position": [
+        2.1145180500709646,
+        -2.280429788261641,
+        0.14549291726044716
+      ],
+      "velocity": [
+        0.0070188423900708645,
+        0.007023575516837183,
+        -0.000447454032032984
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 67384
+    },
+    {
+      "id": 148,
+      "name": "Belt 138",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0895369290760207e-7,
+      "position": [
+        0.5333150749072321,
+        3.011531578841794,
+        -0.015449635261182088
+      ],
+      "velocity": [
+        -0.009693421029482409,
+        0.0017228431218813524,
+        -0.000008787511607268135
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 17229
+    },
+    {
+      "id": 149,
+      "name": "Belt 139",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.454321960822009e-8,
+      "position": [
+        1.4178028387832822,
+        1.6211470751120753,
+        0.07563171678588261
+      ],
+      "velocity": [
+        -0.008799635059635037,
+        0.007809564353347967,
+        0.0003645149012820104
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 10523
+    },
+    {
+      "id": 150,
+      "name": "Belt 140",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.794592580774358e-8,
+      "position": [
+        1.928301132697947,
+        -1.8009312271380713,
+        0.014402506682843246
+      ],
+      "velocity": [
+        0.007068994850034067,
+        0.00820785870130318,
+        -0.00006525757824347868
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 68283
+    },
+    {
+      "id": 151,
+      "name": "Belt 141",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0623424400068564e-7,
+      "position": [
+        -2.4467125082636865,
+        0.5819802607096572,
+        -0.037606576944267424
+      ],
+      "velocity": [
+        -0.0025125104399963886,
+        -0.010527045830130739,
+        0.0006833694035975664
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 35903
+    },
+    {
+      "id": 152,
+      "name": "Belt 142",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.090691781225913e-7,
+      "position": [
+        -0.785253311373146,
+        -3.060759948560969,
+        -0.005296433500580127
+      ],
+      "velocity": [
+        0.009404268191641944,
+        -0.002090448022141222,
+        -0.000003572988322264172
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 55072
+    },
+    {
+      "id": 153,
+      "name": "Belt 143",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 9.028611817741567e-8,
+      "position": [
+        1.3402955614888998,
+        2.194038184536386,
+        0.05237476927934432
+      ],
+      "velocity": [
+        -0.009150977198491594,
+        0.005640046534028119,
+        0.0001346637876505863
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 12621
+    },
+    {
+      "id": 154,
+      "name": "Belt 144",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.757895038624748e-8,
+      "position": [
+        -0.005126411842159583,
+        2.67944119581597,
+        -0.18491367178102547
+      ],
+      "velocity": [
+        -0.010505561506605773,
+        0.000389897442196801,
+        -0.000026771517687856743
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 19418
+    },
+    {
+      "id": 155,
+      "name": "Belt 145",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.1237477282176845e-7,
+      "position": [
+        -1.2957855494557886,
+        -2.538454582853081,
+        -0.13532462516830024
+      ],
+      "velocity": [
+        0.009180254454545744,
+        -0.004108389871268686,
+        -0.00021893280730355292
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 52355
+    },
+    {
+      "id": 156,
+      "name": "Belt 146",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.592699778933483e-8,
+      "position": [
+        -2.5789621079116767,
+        1.8930409943555575,
+        0.0708844858915575
+      ],
+      "velocity": [
+        -0.005769301672335324,
+        -0.007536483110557677,
+        -0.00028222724147340434
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 30969
+    },
+    {
+      "id": 157,
+      "name": "Belt 147",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 2.20326809982987e-8,
+      "position": [
+        0.7682601709478247,
+        2.983509826395259,
+        -0.15495556836496735
+      ],
+      "velocity": [
+        -0.009482001803450109,
+        0.0025338382419841793,
+        -0.00013158044417960446
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 16285
+    },
+    {
+      "id": 158,
+      "name": "Belt 148",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 3.6678039616238196e-8,
+      "position": [
+        -1.7217100726987677,
+        2.5444232000629285,
+        0.014653778135599475
+      ],
+      "velocity": [
+        -0.00813495645475026,
+        -0.0054931624526654435,
+        -0.000031476388135152146
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 26741
+    },
+    {
+      "id": 159,
+      "name": "Belt 149",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.953621187255584e-8,
+      "position": [
+        -0.19853638644602595,
+        -2.219608017385827,
+        0.14226735668715593
+      ],
+      "velocity": [
+        0.011458789993828638,
+        -0.0009573427021380609,
+        0.00006144639749601536
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 57072
+    },
+    {
+      "id": 160,
+      "name": "Belt 150",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.0139689228892745e-8,
+      "position": [
+        -0.3954187048152367,
+        2.4125080561852315,
+        0.024842863381667888
+      ],
+      "velocity": [
+        -0.01090609171860687,
+        -0.0012758672084937233,
+        -0.000013054307472740808
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 21402
+    },
+    {
+      "id": 161,
+      "name": "Belt 151",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.029605372257951e-8,
+      "position": [
+        -0.8251573698045981,
+        2.4402196978973447,
+        0.14222002697661193
+      ],
+      "velocity": [
+        -0.010173542821273593,
+        -0.003299948903660151,
+        -0.00019238655739042373
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 23416
+    },
+    {
+      "id": 162,
+      "name": "Belt 152",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 9.047699658426767e-8,
+      "position": [
+        1.8076792964642177,
+        -1.8301511099623635,
+        -0.09414724150420664
+      ],
+      "velocity": [
+        0.0075108187025667485,
+        0.007883155596473982,
+        0.00040537558743387664
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 67777
+    },
+    {
+      "id": 163,
+      "name": "Belt 153",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 4.4967889096396224e-8,
+      "position": [
+        2.888408713246704,
+        -0.08833859779849745,
+        -0.0019965134843968856
+      ],
+      "velocity": [
+        0.0003042012678084775,
+        0.0103176337367482,
+        0.00023449916800678258
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 77180
+    },
+    {
+      "id": 164,
+      "name": "Belt 154",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 9.316393111613345e-8,
+      "position": [
+        1.168850550273888,
+        -2.5581390993326454,
+        0.1786553803351129
+      ],
+      "velocity": [
+        0.009268732382706752,
+        0.004478322377420635,
+        -0.0003122925628229439
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 63447
+    },
+    {
+      "id": 165,
+      "name": "Belt 155",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.023420972248863e-7,
+      "position": [
+        -3.1399185533013503,
+        -0.03082532831126847,
+        -0.0003717028095995828
+      ],
+      "velocity": [
+        0.00009639647123306382,
+        -0.009611226731222049,
+        -0.00012453339450774258
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 38911
+    },
+    {
+      "id": 166,
+      "name": "Belt 156",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.939588154862515e-8,
+      "position": [
+        2.1966546427284173,
+        -1.112988971113592,
+        -0.06898613870437041
+      ],
+      "velocity": [
+        0.004900309222198716,
+        0.009940638300881202,
+        0.0006156362946584933
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 71757
+    },
+    {
+      "id": 167,
+      "name": "Belt 157",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.851058410997052e-8,
+      "position": [
+        2.4845416391502977,
+        1.5582122825622484,
+        0.013661725960715096
+      ],
+      "velocity": [
+        -0.005282979396484715,
+        0.008680466889724152,
+        0.0000759784464779092
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 6910
+    },
+    {
+      "id": 168,
+      "name": "Belt 158",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 3.1106715068827906e-8,
+      "position": [
+        -0.4568944166639671,
+        -2.8872754058222747,
+        -0.024404518967744836
+      ],
+      "velocity": [
+        0.00994779955534321,
+        -0.0013293724352646868,
+        -0.000011184031143661695
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 56235
+    },
+    {
+      "id": 169,
+      "name": "Belt 159",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.243316772093983e-8,
+      "position": [
+        -2.9400333359367865,
+        -0.4951090689918996,
+        -0.032679988906380214
+      ],
+      "velocity": [
+        0.0016594462279092357,
+        -0.009786759942379337,
+        -0.0006446991309433764
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40853
+    },
+    {
+      "id": 170,
+      "name": "Belt 160",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 5.114664287218008e-8,
+      "position": [
+        -1.3608363287189706,
+        -2.5175765378665327,
+        0.03851030074997471
+      ],
+      "velocity": [
+        0.009050333829307753,
+        -0.004354597895131831,
+        0.00006657368603268858
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 52058
+    },
+    {
+      "id": 171,
+      "name": "Belt 161",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 5.843381196378314e-8,
+      "position": [
+        1.7131478530222766,
+        1.5267135140789645,
+        -0.012205388310995761
+      ],
+      "velocity": [
+        -0.007490881377164566,
+        0.008687520596056536,
+        -0.00006973257163841196
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 8981
+    },
+    {
+      "id": 172,
+      "name": "Belt 162",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 3.32297659642657e-8,
+      "position": [
+        2.2846675140098163,
+        1.4247668054437317,
+        -0.03256659580393843
+      ],
+      "velocity": [
+        -0.005438575815430614,
+        0.009225166973465121,
+        -0.0002113459237825629
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 6880
+    },
+    {
+      "id": 173,
+      "name": "Belt 163",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 9.065777129693234e-8,
+      "position": [
+        2.0360617814678066,
+        2.4829035699426436,
+        0.023586271132055265
+      ],
+      "velocity": [
+        -0.007405732640183581,
+        0.006168502450863113,
+        0.0000585807090150458
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 10910
+    },
+    {
+      "id": 174,
+      "name": "Belt 164",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 8.864557190166938e-8,
+      "position": [
+        2.166133390838506,
+        -0.08947440304132334,
+        0.0015833782891471907
+      ],
+      "velocity": [
+        0.00047284034533004075,
+        0.012012381952468091,
+        -0.00020172654360383407
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 77046
+    },
+    {
+      "id": 175,
+      "name": "Belt 165",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 6.017749171422998e-8,
+      "position": [
+        -1.8021407401688736,
+        -2.197809360364409,
+        0.0017002317454577075
+      ],
+      "velocity": [
+        0.007940224058300374,
+        -0.006281409993412234,
+        0.000004790703809506712
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 49698
+    },
+    {
+      "id": 176,
+      "name": "Belt 166",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 6.847880776097968e-8,
+      "position": [
+        -1.9585279365992347,
+        2.506431758233473,
+        -0.12980927170074172
+      ],
+      "velocity": [
+        -0.007625366205665481,
+        -0.005855652974176581,
+        0.0003037381896985041
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 27578
+    },
+    {
+      "id": 177,
+      "name": "Belt 167",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 2.6226794195913444e-8,
+      "position": [
+        -1.9014979929096403,
+        -1.1758578845002337,
+        0.08199069943132832
+      ],
+      "velocity": [
+        0.006128151686150566,
+        -0.009542808296815999,
+        0.0006641658525433056
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 45639
+    },
+    {
+      "id": 178,
+      "name": "Belt 168",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0812290213380668e-7,
+      "position": [
+        -1.6365653796894435,
+        -2.4238156491975045,
+        0.15184781963598354
+      ],
+      "velocity": [
+        0.008493847102600831,
+        -0.0050092305762875836,
+        0.00031364158119163364
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 50855
+    },
+    {
+      "id": 179,
+      "name": "Belt 169",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 4.205832553559483e-8,
+      "position": [
+        1.5623780634853368,
+        2.6457535899198956,
+        -0.16527471926431953
+      ],
+      "velocity": [
+        -0.008347614652178481,
+        0.005406055746269152,
+        -0.0003378791437889799
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 12815
+    },
+    {
+      "id": 180,
+      "name": "Belt 170",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.1277816269605214e-7,
+      "position": [
+        -2.83164881944529,
+        1.371637371323334,
+        0.056621042533811866
+      ],
+      "velocity": [
+        -0.004330491317539782,
+        -0.008422058093545069,
+        -0.00034776535736253907
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 33217
+    },
+    {
+      "id": 181,
+      "name": "Belt 171",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.0604366733637067e-7,
+      "position": [
+        -0.17812464932556737,
+        -2.881872175008577,
+        -0.03883032896086085
+      ],
+      "velocity": [
+        0.010104641629214536,
+        -0.0003206771137966283,
+        -0.000004260884475552564
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 57409
+    },
+    {
+      "id": 182,
+      "name": "Belt 172",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 7.779495810552786e-8,
+      "position": [
+        1.792568161833822,
+        -1.1088391611026038,
+        -0.057828399854584434
+      ],
+      "velocity": [
+        0.006072590939364901,
+        0.010543503052066625,
+        0.0005494966929192162
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 70708
+    },
+    {
+      "id": 183,
+      "name": "Belt 173",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 4.142964952378023e-8,
+      "position": [
+        -3.032987212063962,
+        0.6746498147441032,
+        -0.004823565344420205
+      ],
+      "velocity": [
+        -0.002187544596271556,
+        -0.00919340770921781,
+        0.0000666808999625951
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 36088
+    },
+    {
+      "id": 184,
+      "name": "Belt 174",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 5.653039099824663e-8,
+      "position": [
+        -2.7806155284136955,
+        -0.2756723537752004,
+        0.005824413393654913
+      ],
+      "velocity": [
+        0.0010383228952115023,
+        -0.010013152622146287,
+        0.00020849788156461382
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 40010
+    },
+    {
+      "id": 185,
+      "name": "Belt 175",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 1.0655041751169842e-7,
+      "position": [
+        -1.6032799861560152,
+        1.7214257326790134,
+        -0.10244239081369058
+      ],
+      "velocity": [
+        -0.008324129080204225,
+        -0.007281461094258567,
+        0.0004341270600076349
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 28646
+    },
+    {
+      "id": 186,
+      "name": "Belt 176",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 6.703026349491435e-8,
+      "position": [
+        0.316197336012289,
+        -2.703339917515658,
+        -0.10313989235457824
+      ],
+      "velocity": [
+        0.010304028073169656,
+        0.0019103742051432562,
+        0.0000729081839319905
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 59606
+    },
+    {
+      "id": 187,
+      "name": "Belt 177",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 8.272513943324586e-8,
+      "position": [
+        -2.7537495713544415,
+        0.4096657864559454,
+        0.02209252802136331
+      ],
+      "velocity": [
+        -0.0015599238015183874,
+        -0.009890977523403587,
+        -0.0005344519850313305
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 36965
+    },
+    {
+      "id": 188,
+      "name": "Belt 178",
+      "kind": "asteroid",
+      "color": "#b1a19d",
+      "mass": 1e-16,
+      "radius": 2.9435088331250816e-8,
+      "position": [
+        0.2531024293686095,
+        -2.392468098089392,
+        -0.020961368442526957
+      ],
+      "velocity": [
+        0.010984802228241169,
+        0.0018377446147145255,
+        0.000016196806705598035
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 59470
+    },
+    {
+      "id": 189,
+      "name": "Belt 179",
+      "kind": "asteroid",
+      "color": "#8d878d",
+      "mass": 1e-16,
+      "radius": 1.0899980493363508e-7,
+      "position": [
+        -2.040699011348793,
+        -1.776756199500663,
+        0.014944125675831586
+      ],
+      "velocity": [
+        0.006921319666042947,
+        -0.007710620246559909,
+        0.00006465877981269856
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 47630
+    },
+    {
+      "id": 190,
+      "name": "Belt 180",
+      "kind": "asteroid",
+      "color": "#c9b5a4",
+      "mass": 1e-16,
+      "radius": 1.3852188219638276e-8,
+      "position": [
+        -0.8043708757864854,
+        2.582361854855235,
+        -0.11857037198683296
+      ],
+      "velocity": [
+        -0.010054526545446063,
+        -0.0026686958886336727,
+        0.0001228036280107986
+      ],
+      "temperature": 160,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": true,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 23121
+    }
+  ],
+  "metadata": {
+    "title": "The Solar System",
+    "scenario": "solar",
+    "speed": 10,
+    "selected": 4
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "span": 7,
+    "yaw": -0.3,
+    "pitch": 0.62,
+    "follow": null
+  }
+}

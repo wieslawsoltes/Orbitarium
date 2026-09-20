@@ -1,0 +1,19 @@
+{
+  "name": "@orbitarium/collisions",
+  "version": "0.1.0",
+  "description": "Orbitarium standalone collisions package",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@orbitarium/math": "0.1.0",
+    "@orbitarium/core": "0.1.0"
+  }
+}

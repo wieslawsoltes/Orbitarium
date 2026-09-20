@@ -1,0 +1,37 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-7,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [],
+  "metadata": {
+    "title": "A blank universe",
+    "scenario": "empty",
+    "speed": 10,
+    "selected": null
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "span": 7,
+    "yaw": -0.3,
+    "pitch": 0.62,
+    "follow": null
+  }
+}

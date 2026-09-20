@@ -1,0 +1,40 @@
+PASS boot: 190 physically simulated solar-system bodies
+PASS two live canvas layers have physical backing sizes
+PASS play button advances gravity integration
+PASS step advances physics while remaining paused
+PASS explorer search and selection inspect the real Earth body
+PASS mass editor writes physical solar-mass state
+PASS keyboard undo restores physical state
+PASS keyboard redo reapplies the edit
+PASS velocity editor converts km/s into AU/day
+PASS circularize command changes the real velocity
+PASS material editing renormalizes the remaining mass fractions
+PASS material density changes actual collision radius on request
+PASS catalog + add orbit generates a new moving moon
+PASS duplicate creates a distinct persistent identity
+PASS delete removes the selected body
+PASS explode creates 40 integrated fragments and preserves mass
+PASS simulation settings alter physics and visualization
+PASS orbit visibility toggle affects the renderer
+PASS wheel zoom changes the 3D camera
+PASS pointer drag orbits the 3D camera
+PASS measure tool stores two world-space points
+PASS focus locks the camera onto the selected identity
+PASS command palette executes renderer commands
+PASS focus mode expands the live viewport
+PASS scenario library loads a different physical system
+PASS validated JSON import round-trips project, body, and camera state
+PASS timeline restores recorded physics, not only the display
+PASS place-and-launch gesture creates a body with initial velocity
+PASS scene screenshot returns a nonempty PNG
+PASS decluttered label rectangles do not overlap
+PASS mobile shell fits viewport without horizontal overflow
+PASS mobile explorer drawer opens
+PASS mobile selection opens the object inspector
+PASS mobile inspector close restores navigation
+PASS mobile scenario dialog remains within viewport
+{
+  "passed": 37,
+  "not_run": 2,
+  "failed": 0
+}

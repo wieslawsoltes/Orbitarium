@@ -1,0 +1,15 @@
+{
+  "name": "@orbitarium/math",
+  "version": "0.1.0",
+  "description": "Orbitarium standalone math package",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false
+}

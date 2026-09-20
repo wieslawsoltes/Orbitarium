@@ -1,0 +1,430 @@
+[
+  {
+    "id": "@orbitarium/celestial@0.1.0",
+    "name": "@orbitarium/celestial",
+    "version": "0.1.0",
+    "size": 5279,
+    "unpackedSize": 13596,
+    "shasum": "240aef7f5fb42f1948e5d6e4de519af3dcf57e16",
+    "integrity": "sha512-/n7pzLzJH/RLorfT4Jcn3dvfFQzBDBrtQskbAvWYsGvo+8z6nJ4ELFsNJ8Juqn0gJg+tzefplNnNGoqNsMJC8A==",
+    "filename": "orbitarium-celestial-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1058,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 365,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 11093,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/collisions@0.1.0",
+    "name": "@orbitarium/collisions",
+    "version": "0.1.0",
+    "size": 4300,
+    "unpackedSize": 10683,
+    "shasum": "dcb5d9e48a47ae00ff1fdf66a8a2775c5e2866af",
+    "integrity": "sha512-6VmXgdEc0Rh8Dviw92STiBkkVJnY0eM4GOOrSorNbd4WyXyKGEgSiqo9vpbjX74oVHGm+n2/9gTjvvPZ6JXgnA==",
+    "filename": "orbitarium-collisions-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1020,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 367,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 8216,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/core@0.1.0",
+    "name": "@orbitarium/core",
+    "version": "0.1.0",
+    "size": 3729,
+    "unpackedSize": 9058,
+    "shasum": "571f8479295912473de1c1f4f3399b57d775a3d4",
+    "integrity": "sha512-PUv2XE8AOwhkRY2tkv6RZjELj0q69jBKLT4/uQdc53QH9wOyGGG3UKdX+TPiKvibPeCFs/7ON/cjycEfUdYEhw==",
+    "filename": "orbitarium-core-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1024,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 322,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 6632,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/gpu@0.1.0",
+    "name": "@orbitarium/gpu",
+    "version": "0.1.0",
+    "size": 3444,
+    "unpackedSize": 8578,
+    "shasum": "8f12cffc30521a85e5c18f0b2e8805bfd7e6c137",
+    "integrity": "sha512-PGdlu/kNpNQN4EW2QcyXSuFiLqVRUY/Qz4GgZYBM5vJQ+YIFrDMiNeeyZCoGU+FAJ4vF5WrfKNtPrVg+rnYF9g==",
+    "filename": "orbitarium-gpu-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1001,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 323,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 6174,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/gravity@0.1.0",
+    "name": "@orbitarium/gravity",
+    "version": "0.1.0",
+    "size": 3869,
+    "unpackedSize": 10246,
+    "shasum": "5de487a424e9337f2807d383b5c0505310cd1770",
+    "integrity": "sha512-6hGfqQHsvbQMgfe/PEqDaAcNtUYjZpinNQKa3OsfnhwHRvajUB/OjaMGeOn7vDZQ29OTtP48Tu82q32quqErDA==",
+    "filename": "orbitarium-gravity-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1038,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 328,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 7800,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/kernels@0.1.0",
+    "name": "@orbitarium/kernels",
+    "version": "0.1.0",
+    "size": 4990,
+    "unpackedSize": 11017,
+    "shasum": "84cb807a86e7b4f8d6106cb09735d682ced2c25d",
+    "integrity": "sha512-Tefcu0nApgzQznkFMZkFDYu6U6Cdp3pFd2WuxA2B2MaOgsd3Etb5ZXKLoidc8t/K09n29n9O7lHIcqRALMEhhA==",
+    "filename": "orbitarium-kernels-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1017,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 303,
+        "mode": 420
+      },
+      {
+        "path": "src/background.wgsl",
+        "size": 1612,
+        "mode": 420
+      },
+      {
+        "path": "src/bodies.wgsl",
+        "size": 4616,
+        "mode": 420
+      },
+      {
+        "path": "src/gravity.wgsl",
+        "size": 2004,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 385,
+        "mode": 420
+      }
+    ],
+    "entryCount": 7,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/math@0.1.0",
+    "name": "@orbitarium/math",
+    "version": "0.1.0",
+    "size": 2991,
+    "unpackedSize": 5881,
+    "shasum": "e7b066eaa883a54c9aaa862ace3b8a3b2ce2b4ce",
+    "integrity": "sha512-vIzgFqV6O8TSn4f4VYodpl2GMqh4XJfx9yBjhlTba7WHGdlvJCXdSOgplJhdJIrXYBXQC3ZogcdPJGabyM//ow==",
+    "filename": "orbitarium-math-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1145,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 265,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 3391,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/persistence@0.1.0",
+    "name": "@orbitarium/persistence",
+    "version": "0.1.0",
+    "size": 3096,
+    "unpackedSize": 6761,
+    "shasum": "75f5b0868d58004a87ecca1da580eac3008d944e",
+    "integrity": "sha512-+A0l4WIlSoo2pyjm2xfo+/m0S73fwj6pF1tG4tiIxSQ0REujUFFI3euBxrjCaUt/Ie4dblTW9SudGmLKF+ppNg==",
+    "filename": "orbitarium-persistence-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1051,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 336,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 4294,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/renderer@0.1.0",
+    "name": "@orbitarium/renderer",
+    "version": "0.1.0",
+    "size": 9429,
+    "unpackedSize": 30264,
+    "shasum": "eb77191bb7b51c7aa87d4373f383431a3b51acbc",
+    "integrity": "sha512-RtrNUH9bNtZMxeGrblnOVTdmWWVJBTuULVXMSUqhqUKVUDL+JclOEHGTYNbyXyvjiYhvEZ72ydEgMO67ci0Ozg==",
+    "filename": "orbitarium-renderer-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 990,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 398,
+        "mode": 420
+      },
+      {
+        "path": "src/camera.js",
+        "size": 2544,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 25252,
+        "mode": 420
+      }
+    ],
+    "entryCount": 5,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/simulation@0.1.0",
+    "name": "@orbitarium/simulation",
+    "version": "0.1.0",
+    "size": 3072,
+    "unpackedSize": 7495,
+    "shasum": "e280a9dd2bbf2c5a5e922cbe330c43c33a19b20b",
+    "integrity": "sha512-Kd7yImJsJ9IQS+Tv1kEdfuGx0EgJ69W14j+FQeVhBISDG5wa7NRWO5vYZj7Irx0lSu5/yDMFJbNABpuzwp/FLg==",
+    "filename": "orbitarium-simulation-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 975,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 518,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 4922,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/thermal@0.1.0",
+    "name": "@orbitarium/thermal",
+    "version": "0.1.0",
+    "size": 2435,
+    "unpackedSize": 4491,
+    "shasum": "e959b9ef46f3e42ed97561a4acb22e9625606c16",
+    "integrity": "sha512-oHhrqRK8X8NpjSM+I0/eeIB7C8ZR5uTFyjQR4fceMc5CnMNz1+ZC5v7NOk4bKCG5v6JkHAbulD3xOQ+ZbPmFaQ==",
+    "filename": "orbitarium-thermal-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1051,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 328,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 2032,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@orbitarium/ui@0.1.0",
+    "name": "@orbitarium/ui",
+    "version": "0.1.0",
+    "size": 5305,
+    "unpackedSize": 12459,
+    "shasum": "46536571eadb0a53278b9f05cce48c06e6752da5",
+    "integrity": "sha512-0T3sdPWTsd4fLrVQGjpBSYFUoPkHFl6j1F1TwTG1BtiIf8lKR10D0ZFOivBuPfhv9OwHWhjueg6xBDg8mK1ARg==",
+    "filename": "orbitarium-ui-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1041,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 261,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 10077,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  }
+]

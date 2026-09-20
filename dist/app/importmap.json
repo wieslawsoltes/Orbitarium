@@ -1,0 +1,16 @@
+{
+  "imports": {
+    "@orbitarium/math": "./packages/math/src/index.js",
+    "@orbitarium/core": "./packages/core/src/index.js",
+    "@orbitarium/gravity": "./packages/gravity/src/index.js",
+    "@orbitarium/collisions": "./packages/collisions/src/index.js",
+    "@orbitarium/thermal": "./packages/thermal/src/index.js",
+    "@orbitarium/celestial": "./packages/celestial/src/index.js",
+    "@orbitarium/kernels": "./packages/kernels/src/index.js",
+    "@orbitarium/gpu": "./packages/gpu/src/index.js",
+    "@orbitarium/renderer": "./packages/renderer/src/index.js",
+    "@orbitarium/ui": "./packages/ui/src/index.js",
+    "@orbitarium/persistence": "./packages/persistence/src/index.js",
+    "@orbitarium/simulation": "./packages/simulation/src/index.js"
+  }
+}

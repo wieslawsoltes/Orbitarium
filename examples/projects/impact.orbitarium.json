@@ -1,0 +1,108 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-9,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Earth",
+      "kind": "earth",
+      "color": "#65a9f5",
+      "mass": 0.0000030034146856628466,
+      "radius": 0.00004258750455597227,
+      "position": [
+        -0.00023333333333333333,
+        -0.0000066666666666666675,
+        0
+      ],
+      "velocity": [
+        0.0003,
+        0,
+        0
+      ],
+      "temperature": 288,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 33,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.6798,
+        "water": 0.0002,
+        "hydrogen": 0
+      },
+      "seed": 42
+    },
+    {
+      "id": 2,
+      "name": "Theia",
+      "kind": "rocky",
+      "color": "#d28262",
+      "mass": 0.0000015017073428314233,
+      "radius": 0.00003542831174802276,
+      "position": [
+        0.00046666666666666666,
+        0.000013333333333333333,
+        0
+      ],
+      "velocity": [
+        -0.0006,
+        0,
+        0
+      ],
+      "temperature": 210,
+      "luminosity": 0,
+      "albedo": 0.25,
+      "greenhouse": 5,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42
+    }
+  ],
+  "metadata": {
+    "title": "Worlds collide",
+    "scenario": "impact",
+    "speed": 0.08,
+    "selected": 1
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "span": 0.0012,
+    "yaw": -0.3,
+    "pitch": 0.62,
+    "follow": null
+  }
+}

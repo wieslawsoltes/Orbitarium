@@ -1,0 +1,19 @@
+{
+  "release": "0.1.0",
+  "numerical_tests": {
+    "passed": 32,
+    "failed": 0
+  },
+  "browser_checks": {
+    "passed": 37,
+    "failed": 0,
+    "not_run": [
+      "WebGPU execution",
+      "IndexedDB on an eligible origin"
+    ]
+  },
+  "browser_mode": "offline set_content; CPU/Canvas",
+  "package_consumer": "All 12 local archives installed offline; headless integration and project round-trip passed",
+  "remote_ci_executed": false,
+  "deployed": false
+}

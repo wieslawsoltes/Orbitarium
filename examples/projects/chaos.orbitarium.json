@@ -1,0 +1,143 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-7,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Star A",
+      "kind": "star",
+      "color": "#ffd38b",
+      "mass": 1,
+      "radius": 0.004650467260962158,
+      "position": [
+        -0.9333333333333333,
+        -0.5599999999999999,
+        -0.04
+      ],
+      "velocity": [
+        0.0024,
+        -0.0048000000000000004,
+        0
+      ],
+      "temperature": 5772,
+      "luminosity": 1,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    },
+    {
+      "id": 2,
+      "name": "Star B",
+      "kind": "star",
+      "color": "#ff906d",
+      "mass": 0.8,
+      "radius": 0.0010026880683402669,
+      "position": [
+        1.0666666666666667,
+        -0.5599999999999999,
+        -0.04
+      ],
+      "velocity": [
+        0.0024,
+        0.0072,
+        0
+      ],
+      "temperature": 3200,
+      "luminosity": 0.3,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    },
+    {
+      "id": 3,
+      "name": "Star C",
+      "kind": "star",
+      "color": "#a3ceff",
+      "mass": 1.2,
+      "radius": 0.01871684394235165,
+      "position": [
+        0.06666666666666665,
+        0.84,
+        0.060000000000000005
+      ],
+      "velocity": [
+        -0.0036000000000000003,
+        -0.0008,
+        0
+      ],
+      "temperature": 18000,
+      "luminosity": 1.8,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    }
+  ],
+  "metadata": {
+    "title": "Three-body problem",
+    "scenario": "chaos",
+    "speed": 10,
+    "selected": 1
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "span": 4,
+    "yaw": -0.3,
+    "pitch": 0.62,
+    "follow": null
+  }
+}

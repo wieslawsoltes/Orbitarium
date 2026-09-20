@@ -1,0 +1,3 @@
+PASS: all 12 local archives installed offline into a clean external consumer
+PASS: headless simulation + validated project round-trip through packaged exports
+{ bodies: 6, time: 0.01, mass: 2.0010094008225825 }

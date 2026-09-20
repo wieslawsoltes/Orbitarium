@@ -1,0 +1,23 @@
+{
+  "name": "@orbitarium/simulation",
+  "version": "0.1.0",
+  "description": "Orbitarium standalone simulation package",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@orbitarium/math": "0.1.0",
+    "@orbitarium/core": "0.1.0",
+    "@orbitarium/gravity": "0.1.0",
+    "@orbitarium/collisions": "0.1.0",
+    "@orbitarium/thermal": "0.1.0",
+    "@orbitarium/persistence": "0.1.0"
+  }
+}

@@ -1,0 +1,6 @@
+
+> orbitarium-workspace@0.1.0 build
+> node scripts/build.mjs
+
+Built static distribution and standalone HTML (251.5 KB). Zero runtime dependencies.
+Pages verified: 15 local references, twelve packages, three WGSL shaders, /Orbitarium/ base.

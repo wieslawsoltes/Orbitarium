@@ -1,0 +1,16 @@
+{
+  "name": "@orbitarium/kernels",
+  "version": "0.1.0",
+  "description": "Orbitarium standalone kernels package",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.js",
+    "./*.wgsl": "./src/*.wgsl"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "sideEffects": false
+}

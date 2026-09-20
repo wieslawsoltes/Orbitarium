@@ -1,0 +1,248 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-7,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Aster A",
+      "kind": "star",
+      "color": "#ffd38b",
+      "mass": 1,
+      "radius": 0.004650467260962158,
+      "position": [
+        -0.5001381142340762,
+        -0.0023783503054426954,
+        0
+      ],
+      "velocity": [
+        0.00000473776283357325,
+        -0.012164046142940046,
+        0
+      ],
+      "temperature": 5772,
+      "luminosity": 1,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    },
+    {
+      "id": 2,
+      "name": "Aster B",
+      "kind": "star",
+      "color": "#ff906d",
+      "mass": 1,
+      "radius": 0.0010026880683402669,
+      "position": [
+        0.4998618857659238,
+        -0.0023783503054426954,
+        0
+      ],
+      "velocity": [
+        0.00000473776283357325,
+        0.01216339549343393,
+        0
+      ],
+      "temperature": 3200,
+      "luminosity": 0.6,
+      "albedo": 0.3,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.001,
+        "rock": 0.009,
+        "water": 0,
+        "hydrogen": 0.99
+      },
+      "seed": 42
+    },
+    {
+      "id": 3,
+      "name": "Earth",
+      "kind": "earth",
+      "color": "#65a9f5",
+      "mass": 0.0000030034146856628466,
+      "radius": 0.00004258750455597227,
+      "position": [
+        3.499861885765924,
+        -0.0023783503054426954,
+        0
+      ],
+      "velocity": [
+        0.00000473776283357325,
+        0.013003239203825604,
+        0
+      ],
+      "temperature": 288,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 33,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.6798,
+        "water": 0.0002,
+        "hydrogen": 0
+      },
+      "seed": 42
+    },
+    {
+      "id": 4,
+      "name": "Jupiter",
+      "kind": "gas",
+      "color": "#d7b79a",
+      "mass": 0.0009545752895442225,
+      "radius": 0.00046732617030490934,
+      "position": [
+        0.3889164949382898,
+        5.483844076016857,
+        0
+      ],
+      "velocity": [
+        -0.010342533059955614,
+        0.000733449774602415,
+        0
+      ],
+      "temperature": 165,
+      "luminosity": 0,
+      "albedo": 0.503,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.02,
+        "rock": 0.03,
+        "water": 0,
+        "hydrogen": 0.95
+      },
+      "seed": 42
+    },
+    {
+      "id": 5,
+      "name": "Mars",
+      "kind": "rocky",
+      "color": "#d28262",
+      "mass": 3.225667372401897e-7,
+      "radius": 0.0000226574080509289,
+      "position": [
+        -7.425081838737417,
+        1.0560217101435614,
+        0
+      ],
+      "velocity": [
+        -0.0012488490076067382,
+        -0.00879455311452903,
+        0
+      ],
+      "temperature": 210,
+      "luminosity": 0,
+      "albedo": 0.25,
+      "greenhouse": 5,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42
+    },
+    {
+      "id": 6,
+      "name": "Neptune",
+      "kind": "ice",
+      "color": "#648bde",
+      "mass": 0.00005149955161506083,
+      "radius": 0.00016458790412449367,
+      "position": [
+        -2.0026982088264833,
+        -9.288914468123865,
+        0
+      ],
+      "velocity": [
+        0.00772025033997127,
+        -0.001664107966663619,
+        0
+      ],
+      "temperature": 72,
+      "luminosity": 0,
+      "albedo": 0.29,
+      "greenhouse": 0,
+      "heatCapacity": 1000,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.32,
+        "rock": 0.67,
+        "water": 0.01,
+        "hydrogen": 0
+      },
+      "seed": 42
+    }
+  ],
+  "metadata": {
+    "title": "Two suns",
+    "scenario": "binary",
+    "speed": 15,
+    "selected": 1
+  },
+  "camera": {
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "span": 7,
+    "yaw": -0.3,
+    "pitch": 0.62,
+    "follow": null
+  }
+}

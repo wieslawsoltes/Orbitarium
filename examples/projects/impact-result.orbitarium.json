@@ -1,0 +1,63 @@
+{
+  "format": "orbitarium",
+  "version": 1,
+  "units": {
+    "length": "AU",
+    "time": "day",
+    "mass": "solar"
+  },
+  "time": 0.34246433001987425,
+  "settings": {
+    "gravity": 1,
+    "softening": 1e-9,
+    "maxStep": 1,
+    "maxSubsteps": 12,
+    "theta": 0.55,
+    "collisions": "merge",
+    "thermal": true
+  },
+  "bodies": [
+    {
+      "id": 1,
+      "name": "Earth",
+      "kind": "earth",
+      "color": "#65a9f5",
+      "mass": 0.00000450512202849427,
+      "radius": 0.00004955731263919903,
+      "position": [
+        0,
+        -5.379167724007036e-22,
+        0
+      ],
+      "velocity": [
+        0,
+        0,
+        0
+      ],
+      "temperature": 11572.994773840426,
+      "luminosity": 0,
+      "albedo": 0.3,
+      "greenhouse": 33,
+      "heatCapacity": 999.9999999999999,
+      "thermalDays": 30,
+      "spin": 1,
+      "rings": false,
+      "visible": true,
+      "tracer": false,
+      "composition": {
+        "iron": 0.31999999999999995,
+        "rock": 0.6765333333333333,
+        "water": 0.003466666666666666,
+        "hydrogen": 0
+      },
+      "seed": 42
+    }
+  ],
+  "metadata": {
+    "title": "Imported universe",
+    "scenario": "custom",
+    "speed": 10,
+    "selected": null
+  },
+  "camera": null
+}

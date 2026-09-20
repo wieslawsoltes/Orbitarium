@@ -1,0 +1,206 @@
+
+> orbitarium-workspace@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: dense SoA grows, preserves stable identity, and swap-removes
+ok 1 - dense SoA grows, preserves stable identity, and swap-removes
+  ---
+  duration_ms: 2.100847
+  type: 'test'
+  ...
+# Subtest: updates are validated before mutating state
+ok 2 - updates are validated before mutating state
+  ---
+  duration_ms: 1.016573
+  type: 'test'
+  ...
+# Subtest: rejects malformed positions, invalid material fractions, and infinite radii
+ok 3 - rejects malformed positions, invalid material fractions, and infinite radii
+  ---
+  duration_ms: 0.193421
+  type: 'test'
+  ...
+# Subtest: Kepler initial state reconstructs specified a, e and inclination
+ok 4 - Kepler initial state reconstructs specified a, e and inclination
+  ---
+  duration_ms: 0.341655
+  type: 'test'
+  ...
+# Subtest: direct gravitational force obeys Newton third law
+ok 5 - direct gravitational force obeys Newton third law
+  ---
+  duration_ms: 0.287884
+  type: 'test'
+  ...
+# Subtest: direct acceleration includes softening and does not self-accelerate
+ok 6 - direct acceleration includes softening and does not self-accelerate
+  ---
+  duration_ms: 1.10758
+  type: 'test'
+  ...
+# Subtest: leapfrog conserves mechanical energy over one circular orbital period
+ok 7 - leapfrog conserves mechanical energy over one circular orbital period
+  ---
+  duration_ms: 10.031223
+  type: 'test'
+  ...
+# Subtest: leapfrog is reversible without dissipative interactions
+ok 8 - leapfrog is reversible without dissipative interactions
+  ---
+  duration_ms: 0.868529
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut agrees with the direct reference within a controlled tolerance
+ok 9 - Barnes–Hut agrees with the direct reference within a controlled tolerance
+  ---
+  duration_ms: 18.583645
+  type: 'test'
+  ...
+# Subtest: Barnes–Hut handles coincident positions with bounded depth
+ok 10 - Barnes–Hut handles coincident positions with bounded depth
+  ---
+  duration_ms: 1.974817
+  type: 'test'
+  ...
+# Subtest: merger conserves mass, linear momentum, center of mass and volume
+ok 11 - merger conserves mass, linear momentum, center of mass and volume
+  ---
+  duration_ms: 0.615598
+  type: 'test'
+  ...
+# Subtest: fragmentation conserves mass, momentum and center of mass
+ok 12 - fragmentation conserves mass, momentum and center of mass
+  ---
+  duration_ms: 3.118231
+  type: 'test'
+  ...
+# Subtest: swept collision catches bodies that pass between endpoints
+ok 13 - swept collision catches bodies that pass between endpoints
+  ---
+  duration_ms: 0.15256
+  type: 'test'
+  ...
+# Subtest: collision broad phase detects swept merger and ignores pass-through mode
+ok 14 - collision broad phase detects swept merger and ignores pass-through mode
+  ---
+  duration_ms: 0.434666
+  type: 'test'
+  ...
+# Subtest: elastic collision conserves kinetic energy and momentum
+ok 15 - elastic collision conserves kinetic energy and momentum
+  ---
+  duration_ms: 0.567175
+  type: 'test'
+  ...
+# Subtest: radiative model gives approximately 255 K for Earth without greenhouse offset
+ok 16 - radiative model gives approximately 255 K for Earth without greenhouse offset
+  ---
+  duration_ms: 0.481766
+  type: 'test'
+  ...
+# Subtest: thermal relaxation stays bounded even with extremely long timesteps
+ok 17 - thermal relaxation stays bounded even with extremely long timesteps
+  ---
+  duration_ms: 0.393513
+  type: 'test'
+  ...
+# Subtest: material radius scales as cube root of mass
+ok 18 - material radius scales as cube root of mass
+  ---
+  duration_ms: 0.133862
+  type: 'test'
+  ...
+# Subtest: all eight scenario factories create finite stable IDs and reference frames
+ok 19 - all eight scenario factories create finite stable IDs and reference frames
+  ---
+  duration_ms: 82.258807
+  type: 'test'
+  ...
+# Subtest: JSON project round-trips without changing physical values
+ok 20 - JSON project round-trips without changing physical values
+  ---
+  duration_ms: 7.646537
+  type: 'test'
+  ...
+# Subtest: import validation rejects unsupported units, settings, duplicates and malformed bodies
+ok 21 - import validation rejects unsupported units, settings, duplicates and malformed bodies
+  ---
+  duration_ms: 0.404199
+  type: 'test'
+  ...
+# Subtest: undo/redo preserves edit snapshots and clears divergent future
+ok 22 - undo/redo preserves edit snapshots and clears divergent future
+  ---
+  duration_ms: 0.211699
+  type: 'test'
+  ...
+# Subtest: simulation reports actual advanced time when accuracy limits requested rate
+ok 23 - simulation reports actual advanced time when accuracy limits requested rate
+  ---
+  duration_ms: 1.357075
+  type: 'test'
+  ...
+# Subtest: impact scenario produces a real collision through integration
+ok 24 - impact scenario produces a real collision through integration
+  ---
+  duration_ms: 3.759253
+  type: 'test'
+  ...
+# Subtest: invalid storage capacities reject before allocation
+ok 25 - invalid storage capacities reject before allocation
+  ---
+  duration_ms: 0.260884
+  type: 'test'
+  ...
+# Subtest: invalid fragmentation is atomic, including bodies below fragment mass floor
+ok 26 - invalid fragmentation is atomic, including bodies below fragment mass floor
+  ---
+  duration_ms: 0.923322
+  type: 'test'
+  ...
+# Subtest: fast ring particles constrain timestep even around a single major body
+ok 27 - fast ring particles constrain timestep even around a single major body
+  ---
+  duration_ms: 11.987712
+  type: 'test'
+  ...
+# Subtest: arbitrary finite orbital phase wraps its procedural seed without altering physical validity
+ok 28 - arbitrary finite orbital phase wraps its procedural seed without altering physical validity
+  ---
+  duration_ms: 0.499483
+  type: 'test'
+  ...
+# Subtest: fractional imported substep counts are rejected
+ok 29 - fractional imported substep counts are rejected
+  ---
+  duration_ms: 0.217749
+  type: 'test'
+  ...
+# Subtest: standalone simulation restore rejects invalid metadata atomically
+ok 30 - standalone simulation restore rejects invalid metadata atomically
+  ---
+  duration_ms: 0.235946
+  type: 'test'
+  ...
+# Subtest: nonfinite requested time is rejected without modifying state
+ok 31 - nonfinite requested time is rejected without modifying state
+  ---
+  duration_ms: 0.45827
+  type: 'test'
+  ...
+# Subtest: swept elastic collision reflects fast spheres after a complete endpoint crossing
+ok 32 - swept elastic collision reflects fast spheres after a complete endpoint crossing
+  ---
+  duration_ms: 0.215855
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 32
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 261.485204

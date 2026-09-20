@@ -1,0 +1,5 @@
+
+> orbitarium-workspace@0.1.0 check
+> node scripts/check.mjs
+
+18 JavaScript modules syntax checked; 0 failures.
